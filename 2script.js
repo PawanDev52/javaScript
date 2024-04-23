@@ -47,3 +47,4 @@ console.log("30" + "35");
 console.log(2 + true);
 console.log(true + true);
 console.log(4 - true);
+console.log(true - false);
