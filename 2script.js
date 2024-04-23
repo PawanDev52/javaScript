@@ -43,3 +43,5 @@ console.log(o);
 o.salary = "200rs";
 console.log(o);
 console.log(30 + 35);
+console.log("30" + "35");
+console.log(2 + true);
