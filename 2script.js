@@ -42,3 +42,4 @@ o.salary = "100rs"; // you can add key and values to the object like this!
 console.log(o);
 o.salary = "200rs";
 console.log(o);
+console.log(30 + 35);
