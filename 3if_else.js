@@ -1,6 +1,6 @@
 console.log("hello developers");
 let a = "3";
-let b = 3;
+let b = 6;
 console.log(a == b);
 console.log(a === b);
 
@@ -24,3 +24,6 @@ else if(age == 10){
 else{
     console.log("you cannot drive");
 }
+
+let c = a < b ? 'yes': 'not';
+console.log(c);
