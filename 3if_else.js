@@ -17,3 +17,7 @@ if((age + grace) > 18){
 else{
     console.log("you cannot drive");
 }
+let a = "3";
+let b = 3;
+console.log(a == b);
+console.log(a === b);
