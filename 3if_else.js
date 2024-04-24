@@ -1,23 +1,26 @@
 console.log("hello developers");
+let a = "3";
+let b = 3;
+console.log(a == b);
+console.log(a === b);
 
-let age = 15;
+let age = 10;
 let grace = 5;
-
+/*
 console.log(age + grace);
 console.log(age - grace);
 console.log(age * grace);
 console.log(age / grace);
 console.log(age ** grace);
 console.log(age % grace);
-
+*/
 
 if((age + grace) > 18){
     console.log("you can drive");
 }
+else if(age == 10){
+    console.log("your age is 20");
+}
 else{
     console.log("you cannot drive");
 }
-let a = "3";
-let b = 3;
-console.log(a == b);
-console.log(a === b);
