@@ -28,4 +28,5 @@ else{
 }
 
 let c = a < b ? 'yes': 'not';
+
 console.log(c);
