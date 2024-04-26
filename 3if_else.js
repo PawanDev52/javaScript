@@ -1,4 +1,4 @@
-console.log("hello learn if else, else if");
+console.log("hello learn if else, else if, ternory operator");
 
 let a = "3";
 let b = 6;
