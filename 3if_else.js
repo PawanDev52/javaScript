@@ -1,4 +1,4 @@
-console.log("hello learn if else");
+console.log("hello learn if else, else if");
 
 let a = "3";
 let b = 6;
