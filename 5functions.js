@@ -30,20 +30,20 @@ console.log("learning functions!");
 // fun = ero(2, 6);
 
 // Practice set
-let obj = {
-    hari: 78,
-    rohan: 70,
-    aakash: 8
-}
+// let obj = {
+//     hari: 78,
+//     rohan: 70,
+//     aakash: 8
+// }
 // const take = Object.values(obj);
 // for (let i = 0; i < take.length; i++) {
 //     console.log(take[i]);
 // }
 
 // question 2
-for (const key in obj) {
-    console.log("the marks of " + key + " is : " + obj[key]);
-}
+// for (const key in obj) {
+//     console.log("the marks of " + key + " is : " + obj[key]);
+// }
 
 // question 3 
 // it will run only in the browser not here
@@ -65,3 +65,13 @@ for (const key in obj) {
 //       break;
 //     }
 //   }
+
+// question 4
+let find = [2, 4, 5, 3, 8, 10, 7, 1];
+function sum(check){
+    let work = check.reduce((total, num)=> total + num, 0)
+    return work / check.length;
+}
+
+let mean = sum(find);
+console.log(mean);
