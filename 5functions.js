@@ -23,6 +23,10 @@ console.log("the sum of numbers is : ", result2);
 console.log("the sum of numbers is : ", result3);
 
 // aero function
-const ero = ()=>{
-    
+const ero = (a, b)=>{ // its a function but also a variable
+    console.log("the ero function returns ", a * b);
 }
+fun = ero(4, 2);
+fun = ero(2, 6);
+
+// Practice set
