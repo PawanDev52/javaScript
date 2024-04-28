@@ -30,6 +30,7 @@ console.log("learning functions!");
 // fun = ero(2, 6);
 
 // Practice set
+// Question - 1
 // let obj = {
 //     hari: 78,
 //     rohan: 70,
@@ -40,12 +41,12 @@ console.log("learning functions!");
 //     console.log(take[i]);
 // }
 
-// question 2
+// Question - 2
 // for (const key in obj) {
 //     console.log("the marks of " + key + " is : " + obj[key]);
 // }
 
-// question 3 
+// Question - 3 
 // it will run only in the browser not here
 // let num = Math.floor(Math.random() * 5) + 1;
 //   let attempts = 0;
