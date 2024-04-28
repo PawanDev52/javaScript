@@ -67,7 +67,7 @@ console.log("learning functions!");
 //     }
 //   }
 
-// question 4
+// Question - 4
 let find = [2, 4, 5, 3, 8, 10, 7, 1];
 function sum(check){
     let work = check.reduce((total, num)=> total + num, 0)
