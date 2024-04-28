@@ -1,4 +1,4 @@
-console.log("learning functions!");
+console.log("learning functions - JS!");
 
 // function great(name){
 //     console.log("Hello " + name + " you are great");
