@@ -22,7 +22,7 @@ console.log("learning functions!");
 // console.log("the sum of numbers is : ", result2);
 // console.log("the sum of numbers is : ", result3);
 
-// aero function
+// arrow function
 // const ero = (a, b)=>{ // its a function but also a variable
 //     console.log("the ero function returns ", a * b);
 // }
