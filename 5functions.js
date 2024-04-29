@@ -75,5 +75,3 @@ console.log("learning functions - JS!");
 // }
 // let mean = sum(find);
 // console.log(mean);
-
-// Faulty Calculator
