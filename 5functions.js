@@ -68,11 +68,12 @@ console.log("learning functions - JS!");
 //   }
 
 // Question - 4
-let find = [2, 4, 5, 3, 8, 10, 7, 1];
-function sum(check){
-    let work = check.reduce((total, num)=> total + num, 0)
-    return work / check.length;
-}
+// let find = [2, 4, 5, 3, 8, 10, 7, 1];
+// function sum(check){
+//     let work = check.reduce((total, num)=> total + num, 0)
+//     return work / check.length;
+// }
+// let mean = sum(find);
+// console.log(mean);
 
-let mean = sum(find);
-console.log(mean);
+// Faulty Calculator
