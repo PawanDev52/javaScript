@@ -9,3 +9,6 @@ console.log(a[8]);
 // console.log(a[9]);
 
 console.log(a.length); // for finding string length
+let name = "hari";
+let friend = "Om";
+console.log("his name is " + name + " and his friend is " + friend);
