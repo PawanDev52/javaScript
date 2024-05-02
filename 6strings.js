@@ -12,3 +12,4 @@ console.log(a.length); // for finding string length
 let name = "hari";
 let friend = "Om";
 console.log("his name is " + name + " and his friend is " + friend);
+console.log(`Shri. ${name} is friend of ${friend}.`); // template literals. and this is string interpolation.
