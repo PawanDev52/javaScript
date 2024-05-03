@@ -26,3 +26,5 @@ console.log(name);
 // console.log("Hello\rWorld!");
 name.toUpperCase();
 console.log(name);
+let ad = name.toLowerCase();
+console.log(ad);
