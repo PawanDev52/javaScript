@@ -28,3 +28,5 @@ name.toUpperCase();
 console.log(name);
 let ad = name.toLowerCase();
 console.log(ad);
+let ac = name.toUpperCase();
+console.log(ac);
