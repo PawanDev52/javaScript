@@ -34,8 +34,12 @@ console.log(name.replace("ri", "gi")); // if ri is present two times so it will 
 // console.log(name.concat(friend));
 console.log(name.concat(friend, "Namo", "Namah")); // you can also do it like this  (instead of comma you can use +)
 console.log(name);
-let test = "    test    ";
+
+let test = "test    ";
 console.log(test);
-console.log(test.trim());
-console.log(test.trimStart()); // trim from start only
-console.log(test.trimEnd()); // trim from end only same there is trimLeft & trimRight
+// console.log(test.trim());
+// console.log(test.trimStart()); // trim from start only
+// console.log(test.trimEnd()); // trim from end only same there is trimLeft & trimRight
+console.log(test.charAt(3)); // character at index 3
+console.log(test.indexOf("st"));
+// explore more string functions by writing test. then it will show you all the functions!
