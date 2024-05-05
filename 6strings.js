@@ -28,3 +28,5 @@ console.log(name);
 console.log(name.toUpperCase());
 console.log(name.toLowerCase());
 console.log(name.length);
+console.log(name.slice(2,6));
+console.log(name.slice(4));
