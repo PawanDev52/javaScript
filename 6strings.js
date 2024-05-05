@@ -42,4 +42,6 @@ console.log(test);
 // console.log(test.trimEnd()); // trim from end only same there is trimLeft & trimRight
 console.log(test.charAt(3)); // character at index 3
 console.log(test.indexOf("st"));
+console.log(test.startsWith("st"));
+console.log(test.endsWith("  "));
 // explore more string functions by writing test. then it will show you all the functions!
