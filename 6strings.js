@@ -24,9 +24,7 @@ let friend = "Om";
 // name = "Shrih\rari";
 console.log(name);
 // console.log("Hello\rWorld!");
-name.toUpperCase();
-console.log(name);
-let ad = name.toLowerCase();
-console.log(ad);
-let ac = name.toUpperCase();
-console.log(ac);
+
+console.log(name.toUpperCase());
+console.log(name.toLowerCase());
+console.log(name.length);
