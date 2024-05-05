@@ -33,3 +33,9 @@ console.log(name.slice(4));
 console.log(name.replace("ri", "gi")); // if ri is present two times so it will only change the first accurance!
 // console.log(name.concat(friend));
 console.log(name.concat(friend, "Namo", "Namah")); // you can also do it like this  (instead of comma you can use +)
+console.log(name);
+let test = "    test    ";
+console.log(test);
+console.log(test.trim());
+console.log(test.trimStart()); // trim from start only
+console.log(test.trimEnd()); // trim from end only same there is trimLeft & trimRight
