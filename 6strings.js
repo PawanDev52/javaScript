@@ -22,28 +22,28 @@ let friend = "Om";
 // name = "HaR\rIom";
 // name = "HaRI\rom";
 // name = "Shrih\rari";
-console.log(name);
+// console.log(name);
 // console.log("Hello\rWorld!");
 
-console.log(name.toUpperCase());
-console.log(name.toLowerCase());
-console.log(name.length);
-console.log(name.slice(2,6));
-console.log(name.slice(4));
-console.log(name.replace("ri", "gi")); // if ri is present two times so it will only change the first accurance!
+// console.log(name.toUpperCase());
+// console.log(name.toLowerCase());
+// console.log(name.length);
+// console.log(name.slice(2,6));
+// console.log(name.slice(4));
+// console.log(name.replace("ri", "gi")); // if ri is present two times so it will only change the first accurance!
 // console.log(name.concat(friend));
-console.log(name.concat(friend, "Namo", "Namah")); // you can also do it like this  (instead of comma you can use +)
-console.log(name);
+// console.log(name.concat(friend, "Namo", "Namah")); // you can also do it like this  (instead of comma you can use +)
+// console.log(name);
 
 let test = "test    ";
-console.log(test);
+// console.log(test);
 // console.log(test.trim());
 // console.log(test.trimStart()); // trim from start only
 // console.log(test.trimEnd()); // trim from end only same there is trimLeft & trimRight
-console.log(test.charAt(3)); // character at index 3
-console.log(test.indexOf("st"));
-console.log(test.startsWith("st"));
-console.log(test.endsWith("  "));
+// console.log(test.charAt(3)); // character at index 3
+// console.log(test.indexOf("st"));
+// console.log(test.startsWith("st"));
+// console.log(test.endsWith("  "));
 // explore more string functions by writing test. then it will show you all the functions!
 
 // Practice set
