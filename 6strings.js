@@ -47,3 +47,8 @@ console.log("learning strings in js");
 // explore more string functions by writing test. then it will show you all the functions!
 
 // Practice set
+
+// question 1
+console.log(`har\'`.length);
+
+// question 2
