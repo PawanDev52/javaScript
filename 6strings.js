@@ -45,3 +45,5 @@ console.log(test.indexOf("st"));
 console.log(test.startsWith("st"));
 console.log(test.endsWith("  "));
 // explore more string functions by writing test. then it will show you all the functions!
+
+// Practice set
