@@ -52,3 +52,8 @@ console.log("learning strings in js");
 console.log(`har\'`.length);
 
 // question 2
+let a = "developer";
+console.log(a.includes("loe"));
+console.log(a.startsWith("d"));
+console.log(a.endsWith("er"));
+
