@@ -67,3 +67,4 @@ console.log(b.slice(12));
 console.log(b.slice(15));
 
 // question 5
+console.log(b.replace("a", "A"));
