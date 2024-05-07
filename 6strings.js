@@ -60,3 +60,8 @@ console.log(a.endsWith("er"));
 // question 3
 console.log(a.toLowerCase());
 console.log(a.toUpperCase());
+
+// question 4
+let b = "Please give Rs 1000";
+console.log(b.slice(12));
+console.log(b.slice(15));
