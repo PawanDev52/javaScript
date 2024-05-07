@@ -1,6 +1,6 @@
 console.log("learning strings in js");
 
-let a = "developer";
+// let a = "developer";
 // console.log(a);
 // console.log(a[0]);
 // console.log(a[1]);
@@ -9,8 +9,8 @@ let a = "developer";
 // console.log(a[9]);
 
 // console.log(a.length); // for finding string length
-let name = "Shrihari";
-let friend = "Om";
+// let name = "Shrihari";
+// let friend = "Om";
 // console.log("his name is " + name + " and his friend is " + friend);
 // console.log(`Shri. ${name} is friend of ${friend}.`); // template literals. and this is string interpolation.
 // name = "hari'om";
@@ -35,7 +35,7 @@ let friend = "Om";
 // console.log(name.concat(friend, "Namo", "Namah")); // you can also do it like this  (instead of comma you can use +)
 // console.log(name);
 
-let test = "test    ";
+// let test = "test    ";
 // console.log(test);
 // console.log(test.trim());
 // console.log(test.trimStart()); // trim from start only
