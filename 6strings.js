@@ -52,8 +52,11 @@ console.log("learning strings in js");
 console.log(`har\'`.length);
 
 // question 2
-let a = "developer";
+let a = "dEvelOpEr";
 console.log(a.includes("loe"));
 console.log(a.startsWith("d"));
 console.log(a.endsWith("er"));
 
+// question 3
+console.log(a.toLowerCase());
+console.log(a.toUpperCase());
