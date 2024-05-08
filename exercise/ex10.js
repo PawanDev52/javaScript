@@ -12,5 +12,5 @@ let obj3 = ["seven", "eight", "nine"];
 //     const element = Math.random() * obj1[i];
 //     console.log(element);
 // }
-let element = Math.random() * obj1;
+let element = Math.floor(Math.random() * 10;
 console.log(element);
