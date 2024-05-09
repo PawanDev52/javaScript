@@ -1,4 +1,4 @@
-// exercise 10
+// exercise 10 - generate random word
 
 let obj1 = ["one", "two", "three"];
 let obj2 = ["four", "five", "six"];
