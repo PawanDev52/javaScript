@@ -9,5 +9,5 @@ function printRandom (arr){
     return arr[generate];
 }
 
-let word = printRandom(obj1);
+let word = `random word is : ${printRandom(obj1)} ${printRandom(obj2)} ${printRandom(obj3)}`;
 console.log(word);
