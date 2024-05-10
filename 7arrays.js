@@ -5,3 +5,4 @@ console.log(arr);
 console.log(arr.length);
 
 console.log(018 == '018');
+console.log(017 == '017');
