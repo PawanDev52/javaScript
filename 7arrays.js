@@ -6,4 +6,5 @@ console.log(arr);
 console.log(arr.length);
 
 console.log(018 == '018');
-console.log(017 == '017');
+
+console.log(17 == '017');
