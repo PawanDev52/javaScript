@@ -43,3 +43,18 @@ console.log(`${first} ${second} ${third}`);
 */
 
 // method 2
+let first = {
+    a : "one",
+    b : "two",
+    c : "three"
+}
+let second = {
+    a : "four",
+    b : "five",
+    c : "six"
+}
+let third = {
+    a : "seven",
+    b : "eight",
+    c : "nine"
+}
