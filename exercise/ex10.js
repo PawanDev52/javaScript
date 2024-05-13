@@ -10,6 +10,7 @@ let word = `random word is : ${printRandom(obj1)} ${printRandom(obj2)} ${printRa
 console.log(word); */
 
 // method 1
+/*
 let first, second, third;
 
 let random = Math.random();
@@ -38,5 +39,7 @@ if (random < 0.33) {
 } else {
   third = "nine";
 }
-
 console.log(`${first} ${second} ${third}`);
+*/
+
+// method 2
