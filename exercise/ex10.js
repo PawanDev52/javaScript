@@ -11,34 +11,32 @@ console.log(word); */
 
 // method 1
 let first, second, third;
-let random = Math.floor(Math.random());
+
+let random = Math.random();
 if (random < 0.33) {
-    first = "one";
-}
-else if(random < 0.66 && random > 0.33){
-    first = "two";
-}
-else{
-    first = "three";
+  first = "one";
+} else if (random < 0.66 && random > 0.33) {
+  first = "two";
+} else {
+  first = "three";
 }
 
+random = Math.random();
 if (random < 0.33) {
-    second = "four";
-}
-else if(random < 0.66 && random > 0.33){
-    second = "five";
-}
-else{
-    second = "six";
+  second = "four";
+} else if (random < 0.66 && random > 0.33) {
+  second = "five";
+} else {
+  second = "six";
 }
 
+random = Math.random();
 if (random < 0.33) {
-    third = "seven";
+  third = "seven";
+} else if (random < 0.66 && random > 0.33) {
+  third = "eight";
+} else {
+  third = "nine";
 }
-else if(random < 0.66 && random > 0.33){
-    third = "eight";
-}
-else{
-    third = "nine";
-}
+
 console.log(`${first} ${second} ${third}`);
