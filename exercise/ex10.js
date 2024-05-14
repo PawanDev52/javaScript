@@ -44,9 +44,9 @@ console.log(`${first} ${second} ${third}`);
 
 // method 2
 let first = {
-    a : "one",
-    b : "two",
-    c : "three"
+    1 : "one",
+    2 : "two",
+    3 : "three"
 }
 let second = {
     a : "four",
