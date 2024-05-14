@@ -49,9 +49,9 @@ let first = {
     3 : "three"
 }
 let second = {
-    a : "four",
-    b : "five",
-    c : "six"
+    1 : "four",
+    2 : "five",
+    3 : "six"
 }
 let third = {
     a : "seven",
