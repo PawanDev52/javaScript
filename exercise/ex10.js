@@ -54,7 +54,7 @@ let second = {
     3 : "six"
 }
 let third = {
-    a : "seven",
-    b : "eight",
-    c : "nine"
+    1 : "seven",
+    2 : "eight",
+    3 : "nine"
 }
