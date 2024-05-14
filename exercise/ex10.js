@@ -58,3 +58,4 @@ let third = {
     2 : "eight",
     3 : "nine"
 }
+let printRandom = Math.floor(Math.random() * 3 + 1);
