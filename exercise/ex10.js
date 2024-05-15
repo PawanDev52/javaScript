@@ -60,4 +60,7 @@ let third = {
 }
 let printRandom = Math.floor(Math.random() * 3 + 1);
 let val1 = first[printRandom];
-console.log(val1);
+printRandom = Math.floor(Math.random() * 3 + 1);
+let var2 = second[printRandom];
+printRandom = Math.floor(Math.random() * 3 + 1);
+let var3 = third[printRandom];
