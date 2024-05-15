@@ -48,26 +48,26 @@ let first = {
     2 : "two",
     3 : "three"
 }
+
 let second = {
     1 : "four",
     2 : "five",
     3 : "six"
 }
+
 let third = {
     1 : "seven",
     2 : "eight",
     3 : "nine"
 }
+
 let printRandom = Math.floor(Math.random() * 3 + 1);
-console.log(printRandom);
 let var1 = first[printRandom];
 
 printRandom = Math.floor(Math.random() * 3 + 1);
-console.log(printRandom);
 let var2 = second[printRandom];
 
 printRandom = Math.floor(Math.random() * 3 + 1);
-console.log(printRandom);
 let var3 = third[printRandom];
 
 console.log(`random word is : ${var1} ${var2} ${var3}`);
