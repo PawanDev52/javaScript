@@ -43,6 +43,7 @@ console.log(`${first} ${second} ${third}`);
 */
 
 // method 2
+/*
 let first = {
     1 : "one",
     2 : "two",
@@ -71,3 +72,6 @@ printRandom = Math.floor(Math.random() * 3 + 1);
 let var3 = third[printRandom];
 
 console.log(`random word is : ${var1} ${var2} ${var3}`);
+*/
+
+// method 3
