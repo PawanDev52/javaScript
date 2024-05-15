@@ -78,13 +78,11 @@ let first = {
   b : "two",
   c : "three"
 }
-
 let second = {
   a : "four",
   b : "five",
   c : "six"
 }
-
 let third = {
   a : "seven",
   b : "eight",
@@ -127,4 +125,4 @@ function generate3(){
     return third['c'];
   }
 }
-console.log(generate1());
+console.log(`random word is : ${generate1()} ${generate2()} ${generate3()}`);
