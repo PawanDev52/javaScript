@@ -103,4 +103,28 @@ function generate1(){
     return first['c'];
   }
 }
+function generate2(){
+  let randm = Math.floor(Math.random() * 3 + 1);
+  if(randm == 1){
+    return second['a'];
+  }
+  else if(randm == 2){
+    return second['b'];
+  }
+  else if(randm == 3){
+    return second['c'];
+  }
+}
+function generate3(){
+  let randm = Math.floor(Math.random() * 3 + 1);
+  if(randm == 1){
+    return third['a'];
+  }
+  else if(randm == 2){
+    return third['b'];
+  }
+  else if(randm == 3){
+    return third['c'];
+  }
+}
 console.log(generate1());
