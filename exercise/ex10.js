@@ -90,3 +90,17 @@ let third = {
   b : "eight",
   c : "nine"
 }
+
+function generate1(){
+  let randm = Math.floor(Math.random() * 3 + 1);
+  if(randm == 1){
+    return first['a'];
+  }
+  else if(randm == 2){
+    return first['b'];
+  }
+  else if(randm == 3){
+    return first['c'];
+  }
+}
+console.log(generate1());
