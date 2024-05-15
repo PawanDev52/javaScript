@@ -49,13 +49,11 @@ let first = {
     2 : "two",
     3 : "three"
 }
-
 let second = {
     1 : "four",
     2 : "five",
     3 : "six"
 }
-
 let third = {
     1 : "seven",
     2 : "eight",
@@ -75,3 +73,20 @@ console.log(`random word is : ${var1} ${var2} ${var3}`);
 */
 
 // method 3
+let first = {
+  a : "one",
+  b : "two",
+  c : "three"
+}
+
+let second = {
+  a : "four",
+  b : "five",
+  c : "six"
+}
+
+let third = {
+  a : "seven",
+  b : "eight",
+  c : "nine"
+}
