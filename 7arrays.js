@@ -16,3 +16,4 @@ console.log(arr[2]);
 
 // Array methods
 
+console.log("some array methods!");
