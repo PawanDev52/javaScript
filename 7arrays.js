@@ -10,4 +10,7 @@ let arr = [1,2,3,4,5,7];
 
 // Array methods
 console.log(arr.toString());
-console.log(arr.join(" - ")); // it will addd - after every array values
+console.log(arr.join(" - ")); // it will add - after every array elements
+console.log(arr.pop()); // removes last element from the array
+console.log(arr.push('kid')); // it will add new element in the end but return the new length
+console.log(arr);
