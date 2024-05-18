@@ -1,6 +1,6 @@
 // Arrays method in JS
 
-let arr = [1,2,3,4,5,7];
+let arr = [3,21,9,4,55,7];
 let arr2 = [4,7,8,9];
 let arr3 = [0,9,4,5];
 // arr[0] = 5666;
@@ -18,4 +18,7 @@ let arr3 = [0,9,4,5];
 // console.log(arr.shift()); // removes first element and return it
 // console.log(arr.unshift(true)); // add element in starting and return length
 // delete arr[2]; // delete an element / memory is allocated in array but there is no value
-console.log(arr);
+console.log(arr.concat(arr2,arr3)); // doesn't modify original array
+// console.log(arr);
+console.log(arr.join(" and "));
+console.log(arr.sort());
