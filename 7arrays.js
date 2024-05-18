@@ -7,3 +7,6 @@ console.log(arr);
 console.log(arr.length);
 console.log(arr[0]);
 console.log(arr[1]);
+
+// Array methods
+console.log(arr.toString());
