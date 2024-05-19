@@ -7,8 +7,8 @@ let arr3 = [0,9,4,5];
 
 console.log(arr);
 console.log(arr.length);
-// console.log(arr[0]);
-// console.log(arr[1]);
+console.log(arr[0]);
+console.log(arr[1]);
 
 // Array methods
 // console.log(arr.toString());
