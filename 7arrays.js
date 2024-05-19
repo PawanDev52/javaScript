@@ -5,8 +5,8 @@ let arr2 = [4,7,8,9];
 let arr3 = [0,9,4,5];
 // arr[0] = 5666;
 
-// console.log(arr);
-// console.log(arr.length);
+console.log(arr);
+console.log(arr.length);
 // console.log(arr[0]);
 // console.log(arr[1]);
 
