@@ -24,5 +24,7 @@ let arr3 = [0,9,4,5];
 // console.log(arr.reverse());
 // console.log(arr.toSorted());
 // console.log(arr.splice(1,2));
-console.log(arr.splice(1,2, 44,55,66,77));
+// console.log(arr.splice(1,2, 44,55,66,77)); // used to add elements on a particular index - go with notes ch-5
+console.log(arr.slice(2));
+console.log(arr.slice(1,4));
 console.log(arr);
