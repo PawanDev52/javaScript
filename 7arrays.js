@@ -23,5 +23,6 @@ let arr3 = [0,9,4,5];
 // console.log(arr.sort());
 // console.log(arr.reverse());
 // console.log(arr.toSorted());
-console.log(arr.splice(1,2));
+// console.log(arr.splice(1,2));
+console.log(arr.splice(1,2, 44,55,66,77));
 console.log(arr);
