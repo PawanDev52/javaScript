@@ -19,8 +19,9 @@ let arr3 = [0,9,4,5];
 // console.log(arr.unshift(true)); // add element in starting and return length
 // delete arr[2]; // delete an element / memory is allocated in array but there is no value
 // console.log(arr.concat(arr2,arr3)); // doesn't modify original array
-console.log(arr);
 // console.log(arr.join(" and "));
-console.log(arr.sort());
-console.log(arr.reverse());
-console.log(arr.toSorted());
+// console.log(arr.sort());
+// console.log(arr.reverse());
+// console.log(arr.toSorted());
+console.log(arr.splice(1,2));
+console.log(arr);
