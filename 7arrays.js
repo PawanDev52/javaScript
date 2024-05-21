@@ -1,8 +1,8 @@
 // Arrays method in JS
 
-let arr = [3,21,9,4,55,7];
-let arr2 = [4,7,8,9];
-let arr3 = [0,9,4,5];
+// let arr = [3,21,9,4,55,7];
+// let arr2 = [4,7,8,9];
+// let arr3 = [0,9,4,5];
 // arr[0] = 5666;
 
 // console.log(arr);
@@ -25,6 +25,43 @@ let arr3 = [0,9,4,5];
 // console.log(arr.toSorted());
 // console.log(arr.splice(1,2));
 // console.log(arr.splice(1,2, 44,55,66,77)); // used to add elements on a particular index - go with notes ch-5
-console.log(arr.slice(2));
-console.log(arr.slice(1,4));
-console.log(arr);
+// console.log(arr.slice(2));
+// console.log(arr.slice(1,4));
+// console.log(arr);
+
+// =====================================================================
+// Looping Arrays
+
+let a = [1, 97, 5, 7, 88];
+
+// using for loop -
+// for (let index = 0; index < a.length; index++) {
+//     const element = a[index];
+//     console.log(element);
+// }
+
+// using for each loop - 
+// a.forEach((value, index, arr) => {
+//     console.log(value, index, arr);
+// });
+
+// using for of loop - 
+// for (const value of a) {
+//     console.log(value);
+// }
+
+// using for in loop
+let obj = {
+    a: 1,
+    b: 2,
+    c: 3
+}
+// for (const key in obj) {
+//     if (Object.hasOwnProperty.call(obj, key)) {
+//         const element = obj[key];
+//         console.log(element);
+//     }
+// }
+for (const key in a) {
+    console.log(a[key]);
+}
