@@ -32,7 +32,7 @@
 // =====================================================================
 // Looping Arrays
 
-let a = [1, 97, 5, 7, 88];
+// let a = [1, 97, 5, 7, 88];
 
 // using for loop -
 // for (let index = 0; index < a.length; index++) {
@@ -51,17 +51,17 @@ let a = [1, 97, 5, 7, 88];
 // }
 
 // using for in loop
-let obj = {
-    a: 1,
-    b: 2,
-    c: 3
-}
+// let obj = {
+//     a: 1,
+//     b: 2,
+//     c: 3
+// }
 // for (const key in obj) {
 //     if (Object.hasOwnProperty.call(obj, key)) {
 //         const element = obj[key];
 //         console.log(element);
 //     }
 // }
-for (const key in a) {
-    console.log(a[key]);
-}
+// for (const key in a) {
+//     console.log(a[key]);
+// }
