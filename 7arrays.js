@@ -71,3 +71,4 @@
 // map filter reduce method
 let a = [1, 2, 3, 4, 5, 6, 7];
 let b = a.map(element => element * 2);
+console.log(b);
