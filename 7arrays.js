@@ -45,12 +45,12 @@
 //     console.log(value, index, arr);
 // });
 
-// using for of loop - 
+// using for of loop - // for value of array
 // for (const value of a) {
 //     console.log(value);
 // }
 
-// using for in loop
+// using for in loop // for keys
 // let obj = {
 //     a: 1,
 //     b: 2,
