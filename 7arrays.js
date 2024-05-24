@@ -87,6 +87,10 @@
 // console.log(c);
 
 // reduce method
-let a = [1, 2, 3, 4, 5, 6, 7];
-let b = a.reduce((total, num)=> total + num, 0);
-console.log(b);
+// let a = [1, 2, 3, 4, 5, 6, 7];
+// let b = a.reduce((total, num)=> total + num, 0);
+// console.log(b);
+
+//  array . from
+let a = "Consoal";
+console.log(Array.from(a));
