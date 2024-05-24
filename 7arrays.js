@@ -79,3 +79,9 @@
 // });
 // console.log(b);
 
+// filter method
+let a = [1, 2, 3, 4, 5, 6, 7];
+let b = a.filter((value, index, arr)=>{
+    return value % 2 === 0;
+});
+console.log(b);
