@@ -69,9 +69,13 @@
 //  ==============================================================================
 
 // map filter reduce method
-let a = [1, 2, 3, 4, 5, 6, 7];
-// let b = a.map(element => element * 2);
-let b = a.map((element, index, arr) => {
-    return element;
-});
-console.log(b);
+
+// => map method
+// let a = [1, 2, 3, 4, 5, 6, 7];
+// let b = a.map(element => element * 2); // way 1
+
+// let b = a.map((element, index, arr) => { // way 2
+//     return `${element * 2} ${index}`;
+// });
+// console.log(b);
+
