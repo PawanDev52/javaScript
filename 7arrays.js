@@ -80,8 +80,10 @@
 // console.log(b);
 
 // filter method
-let a = [1, 2, 3, 4, 5, 6, 7];
-let b = a.filter((value, index, arr)=>{
-    return value % 2 === 0;
-});
-console.log(b);
+// let a = [1, 2, 3, 4, 5, 6, 7];
+// let b = a.map((element, index, arr)=> ({val: element, index: index}));
+// let c = b.filter((value, index, arry)=> value.val % 2 === 0);
+// console.log(b);
+// console.log(c);
+
+// reduce method
