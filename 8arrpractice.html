@@ -38,7 +38,17 @@
 
 // question 6
 let a = "banana";
-
+let b = a.split('');
+let c = b.reduce((item, val)=> {
+    if(item[val]){
+        item[val]++;
+    }
+    else{
+        item[val] = 1;
+    }
+    return item;
+}, {});
+console.log(c);
 
 
 
