@@ -23,6 +23,17 @@
 <div class="box5">box5</div>
 </div>
 
+<table>
+  <tr>
+    <th>th1</th>
+    <th>th2</th>
+  </tr>
+  <tr>
+    <td>td1</td>
+    <td>td2</td>
+  </tr>
+</table>
+
 <script>
   // console.log(document);
   // console.log(document.body);
@@ -45,9 +56,10 @@
   cont.firstElementChild.style.color="red";
   // console.log(document.body.children);
   // console.log(cont.children);
-  console.log(document.body.firstElementChild.childNodes);
-  console.log(document.body.firstElementChild.children[0]);
-  console.log(document.body.firstElementChild.children[0].nextElementSibling);
+  // console.log(document.body.firstElementChild.childNodes);
+  // console.log(document.body.firstElementChild.children[0]);
+  // console.log(document.body.firstElementChild.children[0].nextElementSibling);
+  console.log(document.body.firstElementChild.children[3].parentElement);
   // console.log(document.documentElement.parentNode);
   // console.log(document.documentElement.parentElement);
   // console.log(document.body.parentNode);
