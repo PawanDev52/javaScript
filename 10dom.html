@@ -71,7 +71,9 @@
   // console.log(document.head.nextSibling);
   // console.log(document.head.nextElementSibling);
 
+  // ==================================================================
   // table methods
+
   // let tb = document.body.children[1];
   // console.log(document.body.children[1]);
   // console.log(tb.rows);
@@ -81,7 +83,9 @@
   // console.log(typeof document);
   // console.log(typeof window);
 
+  // ==========================================================================
   // document.get methods
+
   // let box = document.getElementsByClassName("box1");
   // console.log(box);
   // box[1].style.background = "yellow";
@@ -99,7 +103,10 @@
   // console.log(document.getElementsByTagName("div"));
   // console.log(document.getElementsByName("first"));
   
-  let a = document.getElementsByTagName("div");
+  // ====================================================================
+  // match closest contains method
+
+  // let a = document.getElementsByTagName("div");
   // console.log(a);
   // console.log(a[2].matches(".box1"));
   // console.log(a[3].matches(".box1")); // return true false
@@ -108,18 +115,16 @@
   // console.log(a[2].closest(".container"));
   // console.log(a[2].closest("html"));
 
-  console.log(document.querySelector(".container").contains(a[0]));
-  console.log(document.querySelector(".container").contains(document.querySelector(".box3")));
-  console.log(document.querySelector(".container").contains(document.querySelector("body")));
-  console.log(document.querySelector("body").contains(document.querySelector(".container")));
+  // console.log(document.querySelector(".container").contains(a[0]));
+  // console.log(document.querySelector(".container").contains(document.querySelector(".box3")));
+  // console.log(document.querySelector(".container").contains(document.querySelector("body")));
+  // console.log(document.querySelector("body").contains(document.querySelector(".container")));
   
+  // =================================================================================================
+  // do some practice
 
 
 </script>
 
-
-
-
-<!--  difference between getElementsByClassName and querySelectorAll -->
 </body>
 </html>
