@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class="container">
-<div class="box1">box1</div>
+<div name="first" class="box1">box1</div>
 <div class="box1">box1.5</div>
 <div id="redbox" class="box2">box2</div>
 <div class="box1">box3</div>
@@ -96,7 +96,25 @@
   // console.log(document.querySelectorAll(".box5"));
   // document.querySelectorAll(".box5").forEach(ele => ele.style.background = "green");
 
+  // console.log(document.getElementsByTagName("div"));
+  // console.log(document.getElementsByName("first"));
   
+  let a = document.getElementsByTagName("div");
+  // console.log(a);
+  // console.log(a[2].matches(".box1"));
+  // console.log(a[3].matches(".box1")); // return true false
+
+  // console.log(a[2].closest("#redbox")); // return null
+  // console.log(a[2].closest(".container"));
+  // console.log(a[2].closest("html"));
+
+  console.log(document.querySelector(".container").contains(a[0]));
+  console.log(document.querySelector(".container").contains(document.querySelector(".box3")));
+  console.log(document.querySelector(".container").contains(document.querySelector("body")));
+  console.log(document.querySelector("body").contains(document.querySelector(".container")));
+  
+
+
 </script>
 
 
