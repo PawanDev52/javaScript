@@ -17,9 +17,10 @@
 <body>
 <div class="container">
 <div class="box1">box1</div>
-<div class="box2">box2</div>
-<div class="box3">box3</div>
-<div class="box4">box4</div>
+<div class="box1">box1.5</div>
+<div id="redbox" class="box2">box2</div>
+<div class="box1">box3</div>
+<div class="box5">box4</div>
 <div class="box5">box5</div>
 </div>
 
@@ -81,7 +82,18 @@
   // console.log(typeof window);
 
   // document.get methods
-  
+  let box = document.getElementsByClassName("box1");
+  console.log(box);
+  box[1].style.background = "yellow";
+
+  document.getElementById("redbox").style.background = "red";
+  console.log(document.getElementById("redbox"));
+
+  document.querySelector(".box5").style.background = "green";
+  console.log(document.querySelector(".box5"));
+
+  // document.querySelectorAll(".box5").style.background = "brown"; // it won't work
+  console.log(document.querySelectorAll(".box5"));
 </script>
 
 </body>
