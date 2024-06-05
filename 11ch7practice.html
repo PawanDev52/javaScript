@@ -6,13 +6,12 @@
     <title>Practice set 7</title>
 </head>
 <body>
-  <nav>
+  <!-- <nav>
    <li>Home</li>
    <li>About</li>
    <li>blog</li>
    <li>contact</li>
-  </nav>
-
+  </nav> -->
   <table>
     <tr>
      <th>1.1</th><th>2.1</th><th>3.1</th><th>4.1</th><th>5.1</th>
@@ -56,7 +55,11 @@
     // console.log(document.body.children[1].row[1].rowIndex);
 
     // selecting diagonal cells
-    
+    let a = document.body.firstElementChild.rows;
+    console.log(a);
+    for (let i = 0; i < a.length; i++) {
+      document.body.firstElementChild.rows[i].cells[i].style.background = "red";
+    }
   </script>
 </body>
 </html>
