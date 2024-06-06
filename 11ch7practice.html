@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice set 7</title>
+    <style>
+      table tr th{
+        border: 1px solid black;
+        padding: 5px;
+      }
+    </style>
 </head>
 <body>
   <!-- <nav>
@@ -55,10 +61,15 @@
     // console.log(document.body.children[1].row[1].rowIndex);
 
     // selecting diagonal cells
-    // let a = document.body.firstElementChild.rows;
-    // console.log(a);
+    let a = document.body.firstElementChild.rows;
+    console.log(a);
+    for (let i = 0; i < a.length; i++) {
+      document.body.firstElementChild.rows[i].cells[i].style.background = "red";
+    }
+    
     // for (let i = 0; i < a.length; i++) {
-    //   document.body.firstElementChild.rows[i].cells[i].style.background = "red";
+    //   const element = array[i];
+      
     // }
   </script>
 </body>
