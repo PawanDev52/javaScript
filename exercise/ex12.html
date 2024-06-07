@@ -41,7 +41,11 @@
             r = Math.ceil(Math.random() * 255);
             g = Math.ceil(Math.random() * 255);
             b = Math.ceil(Math.random() * 255);
-            
+            boxes[i].style.color = `rgb(${r},${g},${b})`;
+            r = Math.ceil(Math.random() * 255);
+            g = Math.ceil(Math.random() * 255);
+            b = Math.ceil(Math.random() * 255);
+            boxes[i].style.borderColor = `rgb(${r},${g},${b})`;
         }
     </script>
 </body>
