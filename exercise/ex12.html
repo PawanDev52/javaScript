@@ -72,27 +72,27 @@
     //     box.style.borderColor = getRandomColours();            
     // });
 
-        // method 3
-        function getRandomColours() {
-            let r = Math.ceil(Math.random()*255);
-            let g = Math.ceil(Math.random()*255);
-            let b = Math.ceil(Math.random()*255);
-            return `rgb(${r},${g},${b})`;
-        }
+    // method 3
+    function getRandomColours() {
+      let r = Math.ceil(Math.random()*255);
+      let g = Math.ceil(Math.random()*255);
+      let b = Math.ceil(Math.random()*255);
+      return `rgb(${r},${g},${b})`;
+    }
 
-        // let boxes = document.querySelectorAll(".box");
-        // for (let i = 0; i < boxes.length; i++) {
-        //     boxes[i].style.background = getRandomColours();
-        //     boxes[i].style.borderColor = getRandomColours();
-        // }
+    // let boxes = document.querySelectorAll(".box");
+    // for (let i = 0; i < boxes.length; i++) {
+    //     boxes[i].style.background = getRandomColours();
+    //     boxes[i].style.borderColor = getRandomColours();
+    // }
 
-        // with array.from 
-        let boxes = document.querySelectorAll(".box");
-        Array.from(boxes).forEach(box =>{
-            box.style.background = getRandomColours();
-            box.style.borderColor = getRandomColours();
-            box.style.color = getRandomColours();
-        })
-    </script>
+    // with array.from 
+    let boxes = document.querySelectorAll(".box");
+    Array.from(boxes).forEach(box =>{
+      box.style.background = getRandomColours();
+      box.style.borderColor = getRandomColours();
+      box.style.color = getRandomColours();
+    })
+ </script>
 </body>
 </html>
