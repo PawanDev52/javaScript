@@ -87,7 +87,12 @@
         // }
 
         // with array.from 
-
+        let boxes = document.querySelectorAll(".box");
+        Array.from(boxes).forEach(box =>{
+            box.style.background = getRandomColours();
+            box.style.borderColor = getRandomColours();
+            box.style.color = getRandomColours();
+        })
     </script>
 </body>
 </html>
