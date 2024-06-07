@@ -25,52 +25,52 @@
 </head>
 <body>
  <div class="container">
-     <div class="box">Box</div>
-     <div class="box">Box</div>
-     <div class="box">Box</div>
-     <div class="box">Box</div>
-     <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
  </div>
-    <script>
-        // method 1
-        /*let r = Math.ceil(Math.random() * 255);
-        let g = Math.ceil(Math.random() * 255);
-        let b = Math.ceil(Math.random() * 255);
-        let boxes = document.getElementsByClassName("box");
-        for (let i = 0; i < boxes.length; i++) {
-            boxes[i].style.background = `rgb(${r},${g},${b})`;
-            r = Math.ceil(Math.random() * 255);
-            g = Math.ceil(Math.random() * 255);
-            b = Math.ceil(Math.random() * 255);
-            boxes[i].style.color = `rgb(${r},${g},${b})`;
-            r = Math.ceil(Math.random() * 255);
-            g = Math.ceil(Math.random() * 255);
-            b = Math.ceil(Math.random() * 255);
-            boxes[i].style.borderColor = `rgb(${r},${g},${b})`;
-        } */
+ <script>
+    // method 1
+    /*let r = Math.ceil(Math.random() * 255);
+    let g = Math.ceil(Math.random() * 255);
+    let b = Math.ceil(Math.random() * 255);
+    let boxes = document.getElementsByClassName("box");
+    for (let i = 0; i < boxes.length; i++) {
+      boxes[i].style.background = `rgb(${r},${g},${b})`;
+      r = Math.ceil(Math.random() * 255);
+      g = Math.ceil(Math.random() * 255);
+      b = Math.ceil(Math.random() * 255);
+      boxes[i].style.color = `rgb(${r},${g},${b})`;
+      r = Math.ceil(Math.random() * 255);
+      g = Math.ceil(Math.random() * 255);
+      b = Math.ceil(Math.random() * 255);
+      boxes[i].style.borderColor = `rgb(${r},${g},${b})`;
+    } */
 
-        // method 2
-        // function getRandomColours() {
-        //     let r = Math.ceil(Math.random()*255);
-        //     let g = Math.ceil(Math.random()*255);
-        //     let b = Math.ceil(Math.random()*255);
-        //     return `rgb(${r},${g},${b})`;
-        // }
+    // method 2
+    // function getRandomColours() {
+    //     let r = Math.ceil(Math.random()*255);
+    //     let g = Math.ceil(Math.random()*255);
+    //     let b = Math.ceil(Math.random()*255);
+    //     return `rgb(${r},${g},${b})`;
+    // }
 
-        // let boxes = document.getElementsByClassName("box");
-        // for (let i = 0; i < boxes.length; i++) {
-        //     boxes[i].style.background = getRandomColours();
-        //     boxes[i].style.borderColor = getRandomColours();
-        //     boxes[i].style.color = getRandomColours();
-        // }
+    // let boxes = document.getElementsByClassName("box");
+    // for (let i = 0; i < boxes.length; i++) {
+    //     boxes[i].style.background = getRandomColours();
+    //     boxes[i].style.borderColor = getRandomColours();
+    //     boxes[i].style.color = getRandomColours();
+    // }
 
-        // method 2.1
-        // let boxes= document.getElementsByClassName("box");
-        // Array.from(boxes).forEach(box => {
-        //     box.style.background = getRandomColours();
-        //     box.style.color = getRandomColours();
-        //     box.style.borderColor = getRandomColours();            
-        // });
+    // method 2.1
+    // let boxes= document.getElementsByClassName("box");
+    // Array.from(boxes).forEach(box => {
+    //     box.style.background = getRandomColours();
+    //     box.style.color = getRandomColours();
+    //     box.style.borderColor = getRandomColours();            
+    // });
 
         // method 3
         function getRandomColours() {
