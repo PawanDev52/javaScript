@@ -32,7 +32,7 @@
     </div>
     <script>
         // method 1
-        let r = Math.ceil(Math.random() * 255);
+        /*let r = Math.ceil(Math.random() * 255);
         let g = Math.ceil(Math.random() * 255);
         let b = Math.ceil(Math.random() * 255);
         let boxes = document.getElementsByClassName("box");
@@ -46,6 +46,19 @@
             g = Math.ceil(Math.random() * 255);
             b = Math.ceil(Math.random() * 255);
             boxes[i].style.borderColor = `rgb(${r},${g},${b})`;
+        } */
+
+        // method 2
+        function getRandomColours() {
+            let r = Math.ceil(Math.random()*255);
+            let g = Math.ceil(Math.random()*255);
+            let b = Math.ceil(Math.random()*255);
+            return `rgb(${r},${g},${b})`;
+        }
+        let boxes = document.getElementsByClassName("box");
+        for (let i = 0; i < boxes.length; i++) {
+            boxes[i].style.background = getRandomColours();
+            boxes[i].style.borderColor = getRandomColours();
         }
     </script>
 </body>
