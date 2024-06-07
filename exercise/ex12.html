@@ -56,12 +56,20 @@
             let b = Math.ceil(Math.random()*255);
             return `rgb(${r},${g},${b})`;
         }
-        let boxes = document.getElementsByClassName("box");
-        for (let i = 0; i < boxes.length; i++) {
-            boxes[i].style.background = getRandomColours();
-            boxes[i].style.borderColor = getRandomColours();
-            boxes[i].style.color = getRandomColours();
-        }
+        // let boxes = document.getElementsByClassName("box");
+        // for (let i = 0; i < boxes.length; i++) {
+        //     boxes[i].style.background = getRandomColours();
+        //     boxes[i].style.borderColor = getRandomColours();
+        //     boxes[i].style.color = getRandomColours();
+        // }
+
+        // method 2.1
+        let boxes= document.getElementsByClassName("box");
+        Array.from(boxes).forEach(box => {
+            box.style.background = getRandomColours();
+            box.style.color = getRandomColours();
+            box.style.borderColor = getRandomColours();            
+        });
     </script>
 </body>
 </html>
