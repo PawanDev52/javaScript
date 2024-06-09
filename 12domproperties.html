@@ -32,6 +32,7 @@
   // document.querySelector(".box").innerHTML = "hello to the box";
   // document.querySelector(".box").innerText = "hello to the box";
 
+  // ==============================================================================
   // Attribute methods
   // console.log(document.querySelector(".box").hasAttribute("style")); // returns true false if it contains the attribute or not
   // console.log(document.querySelector(".box").getAttribute("style")); // returns the attribute
@@ -43,11 +44,19 @@
   // document.designMode = "on";
   // ===========================================================================
 
+  // ===================================================================================
   // data attributes
   // console.log(document.querySelector(".box").hasAttribute("data-createdby")); // with data attribute we can create custom attributes
   // console.log(document.querySelector(".box").dataset);
   // console.log(document.querySelector(".box").dataset.createdby); // you can access by written dataset. then name of attribute like this
   // console.log(document.querySelector(".box").dataset.conceptby);
+
+  // ================================================================================
+  // insertion methods
+  let div = document.createElement("div"); // for creating element
+  div.innerHTML = "it has been created by <b>Developer!</b>";
+  div.setAttribute("class", "created");
+  document.querySelector(".container").append(div);
 
  </script>
 </body>
