@@ -57,8 +57,10 @@
   div.innerHTML = "it has been created by <b>Developer!</b>"; // for setting innerHTML
   div.setAttribute("class", "created"); // for setting class attribute
   // div.className = "provide";
-  // document.querySelector(".container").append(div); // append will insert this div in the end of container
-  document.querySelector(".container").prepend(div); // prepand will insert this div in the begining
+  // document.querySelector(".container").append(div); // append will insert this div inside the end of container
+  // document.querySelector(".container").prepend(div); // prepand will insert this div inside the begining of container
+  // document.querySelector(".container").before(div); // this will make the div first sibling of container
+  // document.querySelector(".box").after(div); // will insert after element node
 
  </script>
 </body>
