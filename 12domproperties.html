@@ -54,9 +54,11 @@
   // ================================================================================
   // insertion methods
   let div = document.createElement("div"); // for creating element
-  div.innerHTML = "it has been created by <b>Developer!</b>";
-  div.setAttribute("class", "created");
-  document.querySelector(".container").append(div);
+  div.innerHTML = "it has been created by <b>Developer!</b>"; // for setting innerHTML
+  div.setAttribute("class", "created"); // for setting class attribute
+  // div.className = "provide";
+  // document.querySelector(".container").append(div); // append will insert this div in the end of container
+  document.querySelector(".container").prepend(div); // prepand will insert this div in the begining
 
  </script>
 </body>
