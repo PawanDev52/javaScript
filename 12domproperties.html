@@ -52,16 +52,31 @@
   // console.log(document.querySelector(".box").dataset.conceptby);
 
   // ================================================================================
-  // insertion methods
-  let div = document.createElement("div"); // for creating element
-  div.innerHTML = "it has been created by <b>Developer!</b>"; // for setting innerHTML
-  div.setAttribute("class", "created"); // for setting class attribute
+  // insertion methods - element insertion
+  // let div = document.createElement("div"); // for creating element
+  // div.innerHTML = "it has been created by <b>Developer!</b>"; // for setting innerHTML
+  // div.setAttribute("class", "created"); // for setting class attribute
   // div.className = "provide";
   // document.querySelector(".container").append(div); // append will insert this div inside the end of container
   // document.querySelector(".container").prepend(div); // prepand will insert this div inside the begining of container
   // document.querySelector(".container").before(div); // this will make the div first sibling of container
   // document.querySelector(".box").after(div); // will insert after element node
 
+  // insert adjacent html/text/element
+  let cont = document.querySelector(".container");
+  // cont.insertAdjacentHTML("afterbegin", "hello <b>i am inserting this html</b> buddy!"); // will insert html inside the container after begining of container
+  // cont.insertAdjacentHTML("beforebegin", "<b>hello i am inserting this html buddy!</b>"); // insert before element
+  // cont.insertAdjacentHTML("beforeend", "<b>hello i am inserting this html buddy!</b>"); // insert into element at the end
+  // cont.insertAdjacentHTML("afterend", "<b>hello i am inserting this html buddy!</b>"); // insert after element
+
+  // trying with text
+  // cont.insertAdjacentText("afterbegin", "hello i am inserting this text buddy!"); // all above methods for AdjacentHTML are same for adjacentText also
+  
+  // trying with element
+  let p = document.createElement('h2');
+  p.innerHTML = "this is a new paragraph!";
+  cont.insertAdjacentElement("beforeend", p);
+  
  </script>
 </body>
 </html>
