@@ -3,25 +3,36 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Document</title>
+ <title>Dom Properties - video - 71</title>
 </head>
 <body>
  <div class="container">
   <!-- this is a comment -->
-  <div class="box">this is a box.</div>
-  <div class="box">this is a box.</div>
+  <div class="box">this is a box1.</div>
+  <div class="box">this is a box2.</div>
  </div>
  <script>
   // console.log(document.querySelector(".box").innerHTML);
   // console.log(document.querySelector(".container").innerHTML); // innerHTML se inner html milti h
+  // console.log(document.querySelector(".container").outerHTML); // outerHTML se vo element ya div bhi mil jata h or innerHTML bhi
+  
   // console.log(document.querySelector(".box").innerText); // innerText se ander ka text milta h
   // console.log(document.querySelector(".container").innerText);
-  // console.log(document.querySelector(".container").outerHTML); // outerHTML se vo element ya div bhi mil jata h or innerHTML bhi
+  // console.log(document.querySelector(".container").textContent); // provide text inside element
+  
   // console.log(document.querySelector(".container").tagName); // used for elements
   // console.log(document.querySelector(".container").nodeName); // user for any type of nodes
-  console.log(document.querySelector(".container").textContent);
+  
   // console.log(document.querySelector(".container"));
   // console.dir(document.querySelector(".container"));
+  
+  // document.querySelector(".container").hidden = true; // isse element hide ho jayega
+  // document.querySelector(".container").innerHTML = "hello to the box";
+  // document.querySelector(".container").innerText = "hello to the box";
+  // document.querySelector(".box").innerHTML = "hello to the box";
+  document.querySelector(".box").innerText = "hello to the box";
+
+
  </script>
 </body>
 </html>
