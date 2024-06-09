@@ -8,12 +8,14 @@
 <body>
  <div class="container">
   <div class="box">this is a box.</div>
+  <div class="box">this is a box.</div>
  </div>
  <script>
   console.log(document.querySelector(".box").innerHTML);
-  console.log(document.querySelector(".container").innerHTML);
-  console.log(document.querySelector(".box").innerText);
+  console.log(document.querySelector(".container").innerHTML); // innerHTML se inner html milti h
+  console.log(document.querySelector(".box").innerText); // innerText se ander ka text milta h
   console.log(document.querySelector(".container").innerText);
+  console.log(document.querySelector(".container").outerHTML); // outerHTML se vo element ya div bhi mil jata h or innerHTML bhi
  </script>
 </body>
 </html>
