@@ -8,7 +8,7 @@
 <body>
  <div class="container">
   <!-- this is a comment -->
-  <div class="box">this is a box1.</div>
+  <div class="box" style="display: flex;">this is a box1.</div>
   <div class="box">this is a box2.</div>
  </div>
  <script>
@@ -30,7 +30,14 @@
   // document.querySelector(".container").innerHTML = "hello to the box";
   // document.querySelector(".container").innerText = "hello to the box";
   // document.querySelector(".box").innerHTML = "hello to the box";
-  document.querySelector(".box").innerText = "hello to the box";
+  // document.querySelector(".box").innerText = "hello to the box";
+
+  // Attribute methods
+  console.log(document.querySelector(".box").hasAttribute("style")); // returns true false if it contains the attribute or not
+  console.log(document.querySelector(".box").getAttribute("style"));
+  // document.querySelector(".box").setAttribute("style", "display:inline");
+  // document.querySelector(".box").removeAttribute("style");
+  console.log(document.querySelector(".box").attributes);
 
 
  </script>
