@@ -7,15 +7,21 @@
 </head>
 <body>
  <div class="container">
+  <!-- this is a comment -->
   <div class="box">this is a box.</div>
   <div class="box">this is a box.</div>
  </div>
  <script>
-  console.log(document.querySelector(".box").innerHTML);
-  console.log(document.querySelector(".container").innerHTML); // innerHTML se inner html milti h
-  console.log(document.querySelector(".box").innerText); // innerText se ander ka text milta h
-  console.log(document.querySelector(".container").innerText);
-  console.log(document.querySelector(".container").outerHTML); // outerHTML se vo element ya div bhi mil jata h or innerHTML bhi
+  // console.log(document.querySelector(".box").innerHTML);
+  // console.log(document.querySelector(".container").innerHTML); // innerHTML se inner html milti h
+  // console.log(document.querySelector(".box").innerText); // innerText se ander ka text milta h
+  // console.log(document.querySelector(".container").innerText);
+  // console.log(document.querySelector(".container").outerHTML); // outerHTML se vo element ya div bhi mil jata h or innerHTML bhi
+  // console.log(document.querySelector(".container").tagName); // used for elements
+  // console.log(document.querySelector(".container").nodeName); // user for any type of nodes
+  console.log(document.querySelector(".container").textContent);
+  // console.log(document.querySelector(".container"));
+  // console.dir(document.querySelector(".container"));
  </script>
 </body>
 </html>
