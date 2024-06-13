@@ -12,10 +12,10 @@
  <button id="btn">Change Content</button>
  <script>
   let button = document.getElementById("btn");
-  button.addEventListener("dblclick", ()=>{
-    // alert("you clicked on button!");
-    document.querySelector(".box").innerHTML = "<b>you clicked on button!</b>"
-  })
+  // button.addEventListener("dblclick", ()=>{
+  //   // alert("you clicked on button!");
+  //   document.querySelector(".box").innerHTML = "<b>you clicked on button!</b>"
+  // })
 
   button.addEventListener("contextmenu", ()=>{
     alert("you clicked on button!");
@@ -25,6 +25,9 @@
   document.addEventListener("keydown", (e)=>{
     console.log(e);
   })
+  button.onclick = function(){
+
+  }
  </script>
 </body>
 </html>
