@@ -4,6 +4,25 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>js events</title>
+ <style>
+  .child{
+    background-color: aqua;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+  }
+  .childContainer{
+    background-color: blue;
+    padding: 20px;
+    margin: 20px;
+  }
+  .container{
+    background-color: yellow;
+    padding: 20px;
+    margin: 20px;
+  }
+ </style>
 </head>
 <body>
  <!-- <div class="container">
@@ -13,11 +32,11 @@
 
  <!-- event bubbling -->
   <div class="container">
-    <span class="childContainer">
+    <div class="childContainer">
       <div class="child">
         I am a child
       </div>
-    </span>
+    </div>
   </div>
  <script>
   // let button = document.getElementById("btn");
