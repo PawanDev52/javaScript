@@ -42,7 +42,15 @@
   
   // =================================================================
   // event bubbling
-
+  document.querySelector(".child").addEventListener("click", ()=>{
+    alert("Child was clicked!");
+  });
+  document.querySelector(".childContainer").addEventListener("click", ()=>{
+    alert("Child Container was clicked!");
+  });
+  document.querySelector(".container").addEventListener("click", ()=>{
+    alert("container was clicked!");
+  });
 
 
 
