@@ -80,12 +80,19 @@
     let b = Math.ceil(Math.random() * 255);
     return `rgb(${r}, ${g}, ${b})`;
   }
-  setInterval(() => {
-    document.querySelector(".childContainer").style.background = getRandomColor();
-    document.querySelector(".child").style.background = getRandomColor();    
-    document.querySelector(".child").style.borderColor = getRandomColor();
-    document.querySelector(".container").style.background = getRandomColor();
-  }, 1000);
+  // let a = setInterval(() => {
+  //   document.querySelector(".childContainer").style.background = getRandomColor();
+  //   document.querySelector(".child").style.background = getRandomColor();    
+  //   document.querySelector(".child").style.borderColor = getRandomColor();
+  //   document.querySelector(".container").style.background = getRandomColor();
+  // }, 1000);
+  // console.log(a);
+  // clearInterval(a); // this will stop the interval
+
+  let a = setTimeout(() => {
+    document.querySelector(".child").style.background = getRandomColor();
+  }, 2000);
+  clearTimeout(a); // for clearing the timeout
 
 
 
