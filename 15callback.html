@@ -20,6 +20,21 @@
     }, 2000);
 
     console.log("learn and code");
+
+    // =============================================================================
+
+    // callback function
+    const callback = (arg) => {
+      console.log(arg);
+    }
+    
+    const loadScript = (src, callback) => {
+      let sc = document.createElement("script");
+      sc.src = src;
+      sc.onload = callback("code");
+      document.head.append(sc);
+    }
+    
    </script>
 </body>
 </html>
