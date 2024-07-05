@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Async - Await</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- video #76 -->
-<script>
-  function getData() {
-    return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(455);
-    }, 3500);
-    });
-  }
+    <script>
+      // function with method one
+      //   function getData() {
+      //     return new Promise((resolve, reject) => {
+      //     setTimeout(() => {
+      //       resolve(455);
+      //     }, 3500);
+      //     });
+      //   }
 
-  console.log("Loading Modules");
+      async function getData() {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve(455);
+          }, 3500);
+        });
+      }
 
-  console.log("Do something else");
+      async function main() {
+        console.log("Loading Modules");
 
-  console.log("Load data");
+        console.log("Do something else");
 
-  let data = getData();
-//   method one with callback method
+        console.log("Load data");
 
-//   data.then((v) => {
-//   console.log(data);
+        let data = await getData();
+        // with await the data execute then the below will run untill it will wait
+        console.log(data);
+        console.log("process data");
+        console.log("task 2");
+      }
 
-//   console.log("process data");
+      main()
 
-//   console.log("task 2");
-//   });
-</script>
-</body>
+      //   method one with callback method
+
+      //   data.then((v) => {
+      //   console.log(data);
+
+      //   console.log("process data");
+
+      //   console.log("task 2");
+      //   });
+    </script>
+  </body>
 </html>
