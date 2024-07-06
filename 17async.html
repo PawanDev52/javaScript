@@ -17,19 +17,19 @@
       //     });
       //   }
 
-    //   simulate getting data from a server
-    //   async function getData() {
-    //     return new Promise((resolve, reject) => {
-    //       setTimeout(() => {
-    //         resolve(455);
-    //       }, 3500);
-    //     });
-    //   }
+      //   simulate getting data from a server
+      //   async function getData() {
+      //     return new Promise((resolve, reject) => {
+      //       setTimeout(() => {
+      //         resolve(455);
+      //       }, 3500);
+      //     });
+      //   }
 
-    async function getData() {
-      let x = fetch('https://jsonplaceholder.typicode.com/posts')
-      
-    }
+      async function getData() {
+        let x = fetch("https://jsonplaceholder.typicode.com/posts");
+        console.log(x);
+      }
 
       async function main() {
         console.log("Loading Modules");
@@ -43,7 +43,7 @@
         console.log("task 2");
       }
 
-      main()
+      main();
 
       //   method one with callback method
 
