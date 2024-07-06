@@ -27,8 +27,10 @@
       //   }
 
       async function getData() {
-        let x = fetch("https://jsonplaceholder.typicode.com/posts");
-        console.log(x);
+        let x = await fetch("https://jsonplaceholder.typicode.com/posts");
+        let data = await x.json()
+        console.log(data);
+        return 455;
       }
 
       async function main() {
