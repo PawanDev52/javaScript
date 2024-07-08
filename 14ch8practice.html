@@ -4,6 +4,13 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>Chapter - 8 Practice Set</title>
+ <style>
+  .bulbOn{
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+  }
+ </style>
 </head>
 <body>
   <!-- Practice Set - 8 -->
@@ -19,6 +26,9 @@
 
   <!-- question - 3 -->
   <button id="btn">button</button> 
+  <br><br>
+  <!-- question - 5 -->
+   <div id="bulb" class="bulbOn"></div>
 
 <script>
   // question 3 code
@@ -33,11 +43,15 @@
     let a = await con.json()
     return a
   }
-
   setInterval(async function(){
     let url = "https://jsonplaceholder.typicode.com/todos/1";
     console.log(await fetchApi(url));
   }, 2000);
+
+  // question - 5
+  setInterval(()=>{
+    let bulb = document.querySelector("#bulb").classList.toggle('bulbOn');
+  }, 250);
 
 </script>
 </body>
