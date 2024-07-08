@@ -1,74 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Exercise - 13</title>
- <style>
-   .card{
-      display: flex;
-      border: 2px solid black;
-      width: 900px;
-      justify-content: flex-start;
-      align-items: center;
-      vertical-align: middle;
-      padding: 12px;
-      margin: 5px;
-   }
-   .image{
-      /* display: flex; */
-      position: relative;
-   }
-   .image img{
-      width: 200px;
-   }
-   .image .capsule{
-      position: absolute;
-      bottom: 0;
-      right: 5px;
-      z-index: 1;
-      background: black;
-      opacity: 0.8;
-      color: white;
-      padding: 3px;
-      border-radius: 3px;
-      font-size: 14px;
-   }
-   .text h1, p{
-      padding: 2px 10px;
-   }
-   .text h1{
-      font-size: 30px;
-   }
- </style>
-</head>
-<body>
-  <div class="container">
-    <div class="card">
-      <div class="image">
-         <img src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw" alt="">
-         <div class="capsule">31.06</div>
-      </div>
-      <div class="text">
-         <h1>Introduction to Backend | Sigma Web Dev video #1</h1>
-         <p>CodeWithHarry . 727K views . 2 months ago</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise - 13</title>
+    <style>
+      .card {
+        display: flex;
+        border: 2px solid black;
+        width: 900px;
+        justify-content: flex-start;
+        align-items: center;
+        vertical-align: middle;
+        padding: 12px;
+        margin: 5px;
+      }
+      .image {
+        position: relative;
+      }
+      .image img {
+        width: 200px;
+      }
+      .image .capsule {
+        position: absolute;
+        bottom: 0;
+        right: 5px;
+        z-index: 1;
+        background: black;
+        opacity: 0.8;
+        color: white;
+        padding: 3px;
+        border-radius: 3px;
+        font-size: 14px;
+      }
+      .text h1,
+      p {
+        padding: 2px 10px;
+      }
+      .text h1 {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="image">
+          <img
+            src="https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw"
+            alt=""
+          />
+          <div class="capsule">31.06</div>
+        </div>
+        <div class="text">
+          <h1>Introduction to Backend | Sigma Web Dev video #1</h1>
+          <p>CodeWithHarry . 727K views . 2 months ago</p>
+        </div>
       </div>
     </div>
- </div>
 
- <script>
-   function createCard(title, cName, views, monthsOld, duration, thumbnail){
-      let viewStr;
-     if(views<1000){
-      viewStr = views;
-     }
-     else if(views>1000000){
-      viewStr = views/1000000 + "M";
-     }
-     else{
-      viewStr = views/1000 + "k";
-     }
-     let html = `<div class="card">
+    <script>
+      function createCard(title, cName, views, monthsOld, duration, thumbnail) {
+        let viewStr;
+        if (views < 1000) {
+          viewStr = views;
+        } else if (views > 1000000) {
+          viewStr = views / 1000000 + "M";
+        } else {
+          viewStr = views / 1000 + "k";
+        }
+        let html = `<div class="card">
       <div class="image">
          <img src="${thumbnail}" alt="">
          <div class="capsule">${duration}</div>
@@ -77,12 +78,20 @@
          <h1>${title}</h1>
          <p>${cName} . ${viewStr} views . ${monthsOld} months ago</p>
       </div>
-    </div>`
+    </div>`;
 
-    document.querySelector(".container").innerHTML = document.querySelector(".container").innerHTML + html;
-   }
+        document.querySelector(".container").innerHTML =
+          document.querySelector(".container").innerHTML + html;
+      }
 
-   createCard("Introduction to Backend | Sigma Web Dev video #2", "CodeWithHarry", 560000, 7, "31:22", "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw")
- </script>
-</body>
+      createCard(
+        "Introduction to Backend | Sigma Web Dev video #2",
+        "CodeWithHarry",
+        560000,
+        7,
+        "31:22",
+        "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLACwWOixJVrKLFindK92kYMgTcQbw"
+      );
+    </script>
+  </body>
 </html>
