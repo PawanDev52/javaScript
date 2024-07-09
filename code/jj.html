@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<body>
+  <div>this is box</div>
+  <div>
+    <p>this is <b>bold</b></p></div>
+    <p>this is <strong>strong</strong></p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis
+      quaerat mollitia autem impedit dolore aperiam labore inventore, neque
+      nesciunt aut harum fugiat sunt quidem hic debitis commodi quod quam
+      sapiente minima eaque explicabo?
+    </p>
+    <button id="decrease">-</button>
+    <p id="try">0</p>
+    <button id="increase">+</button>
+    <!-- <a href="#class">click here</a> -->
+    <hr />
+  <button id="button1">a + b</button>
+  <button id="button2">a - b</button>
+  <button id="button3">a * b</button>
+  <button id="button4">a / b</button>
+  <hr />
+  <div id="text">this is text</div>
+  
+  
+  <!-- <img src="home_banner.webp" width="800" height="300" usemap="#homemap" />
+  <map name="homemap">
+    <area shape="rect" coords="130,100, 250, 150" alt="career" href="h_gal1.webp" />
+    <area shape="circle" coords="700, 100, 50" alt="nda" href="h_gal4.webp" />
+  </map>
+  <a href="#ggogel.com">click here</a> -->
+
+<script>
+/* console.log("var, let and const")
+var a = 45;
+console.log(a);
+var a = 'p';
+console.log(a);
+let b = "harry";
+console.log(b);
+const author = "Pawan";
+console.log(author);
+// author = 5 // Throw an error because constant cannot be changed
+b = 4;
+console.log(b);
+const harry = 0;
+let c = null;
+console.log(c);
+let d = undefined;
+console.log(d);
+{
+  let b = 'this';
+  console.log(b);
+}
+console.log(b);  */
+
+// nn bb ss u - Primitives in JS
+// null Number Boolean BigInt String Symbol undefined
+/* let a = null;
+let b = 345;
+let c = true; // can also be false
+let d = BigInt("567") + BigInt("3");
+let e = "Harish";
+let f = Symbol("I am a nice symbol");
+let g;
+console.log(a, b, c, d, e, f, g);
+console.log(typeof a, typeof b, typeof c, typeof d, typeof e, typeof f, typeof g);
+
+// Non primitive data type - Objects in JS
+const item = {
+  hari: ["true", "false1"],
+  sohan: false,
+  mohan: 67,
+  rohan: undefined
+}
+console.log(item["mohan"]); // item ke ander ki koi bhi key likenege to uske ander ki value print ho jayegi
+console.log(typeof item["sohan"]);
+console.log(item["hari"][1]);
+console.log(item.sohan);
+console.log(item);
+console.log(item);
+
+let ary = ["abc", 30, "ldkfj"];
+
+let obj = {
+  name: "div",
+  class: "four",
+  marks: 56
+}
+
+console.log(typeof ary);
+console.log(Array.isArray(ary), Array.isArray(obj));
+*/ 
+//  let a = 5;
+//  let b = 7;
+//  console.log(a); // 5
+//  console.log(a++); // 5
+//  console.log(a); // 6
+//  console.log(a++); // 7
+//  console.log(a); // 7
+//  console.log(--a); // 6
+//  console.log(a--); // 6
+//  console.log(a); // 5
+//  console.log(--a); // 4
+
+// let a=9;
+// var b=9;
+// console.log(a);
+// {
+//   let a = 44;
+//   console.log(a);
+// }
+// console.log(a);
+
+ 
+// const a = "value";
+// console.log(a);
+// console.log(typeof a);
+// const trick = {
+//   name: "hello",
+//   class: "four",
+//   id: "is"
+// };
+// console.log(trick);
+// trick.num = 56;
+// console.log(trick);
+
+// let got = {
+//   name: "jim",
+//   class: "code",
+//   work: "meeting",
+//   attendance: "present",
+//   come: "daily"
+// };
+// console.log(got.come);
+
+// let a = prompt("Enter value of a");
+// let b = prompt("Enter value of b");
+// let c = 0;
+// console.log('value of a',a);
+// console.log('value of b',b);
+// console.log('after swapping')
+// c = a;
+// a = b;
+// b = c;
+// console.log('value of a', a);
+// console.log('value of b', b);
+
+//let a = 3;
+//let b = 4;
+
+/*console.log(a !== 4);
+console.log(a !== 3);
+console.log('34' + '45');
+console.log(false - 2);
+console.log(true + true);
+console.log(true + false);
+console.log(false + false);
+console.log(true - false);*/
+// console.log("value of a is - ", a);
+// console.log("value of b is - ", b);
+// a += b ;
+// b = a - b;
+// // console.log(b);
+// a = a -b;
+// console.log("after swap a is - ", a);
+// console.log("after swap b is - ", b);
+/*if(a > b){
+  console.log("the greater num is a");
+}
+else{
+  console.log("the greater num is b", b);
+}*/
+
+/*let a = 3;
+let b = 15;
+let c = 8;
+
+if(a> b && a> c){
+  console.log("the greatest value is a", a);
+}
+else if(b>a && b> c){
+  console.log("the greatest value is b", b);
+}
+else{
+  console.log("the greatest value is c", c);
+}*/
+
+/*let a = prompt("enter value of a");
+for(let i = 1; i <=10; i++){
+  console.log(a + " * " + i + " = " + a*i);
+}*/
+
+/* let a = prompt("enter a value");
+if(a % 2 == 1){
+  console.log("this is a odd number", a);
+}
+else{
+  console.log("this is a even number", a);
+} */
+
+
+/* let age = 15;
+if(age> 20){
+  console.log("age is greater than 20");
+}
+else if(age < 20 && age > 10){
+  console.log("age is greater than 10 and less than 20");
+}
+else{
+  console.log("age is less than 10");
+}
+
+let a = 101;
+if(a % 2 == 0 || a % 3 == 0){
+  console.log("divisible by 2 and 3");
+}
+else{
+  console.log("not divisible by 2 and 3");
+}
+let check = age > 18 ? "you can drive" : "you can not drive";
+console.log(check);
+
+switch (age) {
+  case 1:
+    console.log("Age is 1");
+    break;
+  case 3:
+    console.log("Age is 3");
+    break;  
+  case 15:
+    console.log("Age is 15");
+    break;
+  default:
+    console.log("not valid");
+    break;
+} */
+
+// let ab = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//  ab.forEach(element => {
+//   if(ab[element] % 2 === 1){
+//     console.log(ab[element]);
+//  }
+//  });
+
+//let ar = [2, 3, 5, 6, 7, 8, 9, 11, 12, 13];
+// console.log(ar);
+// console.log(Object.keys(ar));
+// ar.length = 14;
+// console.log(ar.length);
+// console.log(ar);
+// ar.forEach((item, index) => {
+//   console.log(`${index} : ${item}`);
+// });
+
+/*const toDo = ar.keys();
+// console.log(toDo);
+for (const key of toDo) {
+  console.log(`${key} : ${ar[key]}`);
+}*/
+
+// let a = prompt("enter value of a");
+// for(let i = 10; i >=1; i--){
+//   console.log(a + " * " + i + " = " + a*i);
+// }
+
+/*let x = 5;
+let y = 7;
+let button1 = document.querySelector("#button1");
+let button2 = document.querySelector("#button2");
+let button3 = document.querySelector("#button3");
+let button4 = document.querySelector("#button4");
+let text = document.querySelector("#text");
+
+button1.onclick = function(){
+  text.innerText = x + " - " + y + " = " + subtract(x, y);
+};
+
+button2.onclick = function(){
+  text.innerText = x + " + " + y + " = " + sum(x, y);
+};
+
+button3.onclick = function(){
+  text.innerText = x + " / " + y + " = " + divide(x, y);
+};
+
+button4.onclick = function(){
+  text.innerText = x + " * " + y + " = " + multiple(x, y);
+};
+
+function sum(a, b){
+  return a + b;
+}
+
+function subtract(a, b){
+  return a - b;
+}
+
+function divide(a, b){
+  return a / b;
+}
+
+function multiple(a, b){
+  return a * b;
+}*/
+
+
+//let i=1;
+// do{   
+//     console.log(i);
+//     i++;
+// }while(i<10);
+
+// while (i<10) {
+//   console.log(i);
+//   i++;
+// }
+// for (let i = 0; i < 10; i++) {
+//   console.log(i);
+// }
+
+// let a = prompt("enter your name");
+// let b = 'Hello Mr. ' + a + ' ! how are you ?';
+// alert(b);
+
+/* let arr1 = ["hello", "world", "sir"];
+let arr2 = ["dev", "code", "run"];
+let arr3 = ["build", "create", "execute"];
+
+function printingRandom (arr) {
+  let generate = Math.floor(Math.random() * arr.length);
+  return arr[generate];
+}
+
+let anyWord = `random word is : ${printingRandom(arr1)} ${printingRandom(arr2)} ${printingRandom(arr3)}`;
+console.log(anyWord); */
+
+// let arr1 = {
+//   word1: "hello",
+//   word2: "world",
+//   word3: "sir"
+// }
+// console.log(arr1);
+
+// document.querySelector("html").addEventListener("click", function () {
+//   alert("Ouch! Stop poking me!");
+// });
+/*
+let obj1 = {
+  1: "one",
+  2: "two",
+  3: "three"
+}
+let obj2 = {
+  1: "four",
+  2: "five",
+  3: "six"
+}
+let obj3 = {
+  1: "seven",
+  2: "eight",
+  3: "nine"
+}
+let a = Math.floor(Math.random() * 3 + 1);
+let t1 = obj1[a];
+a = Math.floor(Math.random() * 3 + 1);
+let t2 = obj2[a];
+a = Math.floor(Math.random() * 3 + 1);
+let t3 = obj3[a];
+console.log(`the random word is : ${t1} ${t2} ${t3}`);
+// console.log(`the random word is : ${obj1[a]} ${obj2[a]} ${obj3[a]}`);
+*/
+
+/*
+let obj1 = {
+  a: "one",
+  b: "two",
+  c: "three"
+}
+let obj2 = {
+  a: "four",
+  b: "five",
+  c: "six"
+}
+let obj3 = {
+  a: "seven",
+  b: "eight",
+  c: "nine"
+}
+function printingRandom(obj){
+  let generate = Math.floor(Math.random() * 3 + 1);
+  if(generate == 1){
+    return obj['a'];
+  }
+  else if(generate == 2){
+    return obj['b'];
+  }
+  else if(generate == 3){
+    return obj['c'];
+  }
+}
+function printingRandom1(obj){
+  let generate = Math.floor(Math.random() * 3 + 1);
+  if(generate == 1){
+    return obj['a'];
+  }
+  else if(generate == 2){
+    return obj['b'];
+  }
+  else if(generate == 3){
+    return obj['c'];
+  }
+}
+function printingRandom2(obj){
+  let generate = Math.floor(Math.random() * 3 + 1);
+  if(generate == 1){
+    return obj['a'];
+  }
+  else if(generate == 2){
+    return obj['b'];
+  }
+  else if(generate == 3){
+    return obj['c'];
+  }
+}
+console.log(`random word is : ${printingRandom(obj1)} ${printingRandom1(obj2)} ${printingRandom2(obj3)}`);
+*/
+
+// var ba = 54;
+// function one(){
+//   function two(){
+//     function three(){
+//       function four(){
+//         ba = 'jjkl';
+//         return ba;  
+//       }
+//       return four();  
+//     }
+//     return three();
+//   }
+//   return two();
+// }
+// let c= one();
+// console.log(c);
+// console.log(ba);
+
+// let generate = Math.floor(Math.random() * 3 + 1);
+//   if(generate == 1){
+//     console.log(obj1['a']);
+//   }
+//   else if(generate == 2){
+//     console.log(obj1['b']);
+//   }
+//   else if(generate == 3){
+//     console.log(obj1['c']);
+//   }
+
+// let a = [{name: "dev", designation: "developer"},
+//          {name: "dev1", designation: "dev1"},
+//          {name: "dev2", designation: "dev2"}];
+// console.table(a);
+
+// let fruits = ["Banana", "Orange", "Apple", "Mango"];
+// let fruits = [5, 2, 11, 99, 1000, 3333];
+// console.log(fruits.toSorted());
+// console.log(fruits.sort());
+
+// const numbers = [1, 2, 3, 4];
+// const doubled = numbers.map(item => item + 2);
+// console.log(doubled); // [2, 4, 6, 8]
+
+// ========================================================================================
+// map
+// let a = [1, 2, 3, 4, 5, 6, 7];
+// let c = [{
+//   name: 1,
+//   class: 2,
+//   marks: 3
+// }];
+// ================
+// map on array
+
+// let b = a.map(function callback(value, index, arr){
+//   // return `value - ${value} on index - ${index} and ${arr}`;
+//   return value + 5;
+// });
+
+// let b = a.map(element => element + 6);
+
+// let b = a.map((value, index, arr) => {
+//   return `${value} ${index}`;
+// });
+
+// map on object
+// let b = c.map(element => element);
+
+// console.log(b);
+
+// ==============================================
+// question 2
+// let a = [];
+// let b;
+// while (true) {
+//   b = parseInt(prompt("enter a number"));
+//   if(b===0){
+//     break;
+//   }
+//   if(!isNaN(b)){
+//   a.push(b);
+//   }else{
+//     alert("enter a valid number");
+//   }
+// }
+// alert("Numbers in a - " + a.join(", "));
+
+// let a =[];
+// let b;
+// do {
+//   b = parseInt(prompt("enter a number"));
+//   a.push(b);
+// } while (b!=0);
+// console.log(a);
+
+// =========================================================
+//  question 3
+// let a = [20,30,34,45,50,67,70];
+// let b = a.filter(item=> item % 10 == 0);
+// console.log(b);
+
+// =========================================================
+// question 4
+// let a = [3,4,5,6];
+// let b = a.map(item => item *item);
+// console.log(b);
+
+// let a = [];
+// for (let i = 0; i < 5; i++) {
+//   let b = parseInt(prompt("enter a number"));
+//   b = b ** 2;
+//   a.push(b);
+// }
+// console.log(a);
+
+// ==========================================================
+// question 5
+// let a = [1,2,3,4,5,6,7,8,9];
+// let b = a.reduce((total,num)=> total * num);
+// console.log(b);
+// =====================================================================================
+
+// const obj = {a: 1, b: 2, c: 3};
+
+// for (let key in obj) {
+//     console.log(key, obj[key]);
+// }
+// const array = [10, 20, 30];
+
+// for (let value of array) {
+//     console.log(value);
+// }
+
+// let a = [1,2,3,4,5,6,7,8];
+// let b = [];
+// let c = [];
+// for (let i = 0; i < a.length; i++) {
+//   if(a[i] % 2 == 0){
+//     console.log(`the even value at index - ${i} is ${a[i]}`);
+//     b.push(a[i]);
+//   }
+//   if(a[i]%2==1){
+//     c.push(a[i]);
+//   }
+// }
+// console.log(`the even numbers are - ${b}`);
+// console.log(`the odd numbers are - ${c}`);
+
+// let color = prompt("enter color");
+// document.body.style.background = color;
+
+// let a = document.getElementById("try");
+// let count = 0;
+// document.getElementById("increase").addEventListener('click', function(){
+//   count++;
+//   a.textContent = count;
+// })
+// document.getElementById("decrease").addEventListener('click', function(){
+//   if(count>0){
+//     count--;}
+//   a.textContent = count;
+// })
+
+// document.body.style.background = 'red';
+// setTimeout(()=> document.body.style.background = '', 4000);
+
+// for (let i = 0; i < document.body.childNodes.length; i++) {
+//       alert( document.body.childNodes[i] ); // Text, DIV, Text, UL, ..., SCRIPT
+//     }
+
+// for (let node of document.body.childNodes) {
+//   alert(node); // shows all nodes from the collection
+// }
+
+// alert( Array.from(document.body.childNodes).filter); // function
+// alert( Array.from(document.body.childNodes).filter(item=> item) ); // function
+
+
+
+</script>
+</body>
+</html>
