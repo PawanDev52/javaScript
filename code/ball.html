@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Football</title>
+  <style>
+    #field {
+      border: 4px solid black;
+      background-color: #46a546;
+      width: 400px;
+      height: 300px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    #ball {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 40px;
+      width: 40px;
+      transition: all 1s;
+    }
+  </style>
+</head>
+<body>
+  <div id="field">
+    <img id="ball" src="ball.svg" alt="football" />
+    ---------------------------------------------------------------------------
+    ---------------------------------------------------------------------------
+    ---------------------------------------------------------------------------
+    ---------------------------------------------------------------------------
+    ---------------------------------------------------------------------------
+    ---------------------------------------------------------------------------
+    ---------------------------------------------------------------------------
+    ---------------------------------------------------------------------------
+    ---------------------------------------------------------------------------
+    ---------------------------------------------------------------------------
+    ---------------------------------------------------------------------------
+    ---------------------------------------------------------------------------
+    ---------------------------------------------------------------------------
+    ---------------------------------------------------------------------------
+    ---------------------------------------------------------------------------
+    ---------------------------------------------------------------------------
+  </div>
+  <div id="text"></div>
+  <script>
+    // ball.style.left = (field.clientWidth - ball.offsetWidth) / 2 + "px";
+    // ball.style.top = (field.clientHeight - ball.offsetHeight) / 2 + "px";
+
+    // console.log(field.clientWidth/2);
+    // console.log(field.clientHeight/2);
+    // console.log(document.documentElement.clientWidth);
+    // console.log(window.innerWidth);
+    // console.log(document.documentElement.scrollTop);
+    // console.log(document.documentElement.scrollLeft);
+    // console.log('Current scroll from the top: ' + window.pageXOffset);
+
+    // let text = document.getElementById("text");
+    // let field = document.getElementById("field");
+    // document.addEventListener("click", (el)=>{
+    //   text.innerHTML = `coordinates are ${el.clientX} : ${el.clientY}`;
+    // });
+
+    // =============================================================
+    // let ball = document.getElementById("ball");
+    // let field = document.getElementById("field");
+    // field.addEventListener("click", function (el) {
+    //   // let coords = field.getBoundingClientRect();
+    //   let left =
+    //     el.clientX - field.offsetLeft - field.clientLeft - ball.clientWidth / 2;
+    //   let top =
+    //     el.clientY - field.offsetTop - field.clientTop - ball.clientHeight / 2;
+    //   if (left < 0) {
+    //     left = 0;
+    //   }
+    //   if (top < 0) {
+    //     top = 0;
+    //   }
+    //   if (left + ball.clientWidth > field.clientWidth) {
+    //     left = field.clientWidth - ball.clientWidth;
+    //   }
+    //   if (top + ball.clientHeight > field.clientHeight) {
+    //     top = field.clientHeight - ball.clientHeight;
+    //   }
+    //   ball.style.left = left + "px";
+    //   ball.style.top = top + "px";
+    // });
+
+
+
+
+    let field = document.getElementById("field");
+    let box = document.getElementById("box");
+    field.onclick = function(event) {
+      let coords = this.getBoundingClientRect();
+      let left = event.clientX - coords.left - field.clientLeft - ball.clientWidth / 2;
+      let top = event.clientY - coords.top - field.clientTop - ball.clientHeight / 2;
+      if(left < 0){
+        left = 0;
+      }
+      if(top< 0){
+        top = 0;
+      }
+      if(left + ball.clientWidth > field.clientWidth){
+        left = field.clientWidth - ball.clientWidth;
+      }
+      if(top + ball.clientHeight > field.clientHeight){
+        top = field.clientHeight - ball.clientHeight;
+      }
+      ball.style.left = left + 'px';
+      ball.style.top = top + 'px';
+    }
+    
+  </script>
+</body>
+</html>

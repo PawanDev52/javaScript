@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    .box{
+      background-color: grey;
+      padding: 30px;
+    }
+    .inner_box{
+      background-color: aqua;
+      padding: 30px;
+    }
+    .inner_box_mini{
+      background-color: blueviolet;
+      padding: 30px;
+    }
+    .para{
+      background-color: darkgoldenrod;
+      padding: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3 class="animate__animated  animate__bounce">Bubbling</h3>
+  </div>
+  <div class="container">
+    <div class="box">
+      <div class="inner_box">
+        <div class="inner_box_mini">
+          <p class="para">Lorem ipsum dolor sit amet.</p>
+          <div class="animate__animated animate__bounce">
+            this is another div in inner box mini.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    document.querySelector(".box").onclick = function(e){
+    //   e.stopPropagation();
+      alert("targeted event - " + e.target.tagName + " / tagName - " + this.tagName + " / " + e.eventPhase);
+    };
+    document.querySelector(".inner_box").onclick = function(e){
+    //   e.stopPropagation();
+    //   alert("you clicked on inner box");
+    };
+    document.querySelector(".inner_box_mini").onclick = function(e){
+    //   e.stopPropagation();
+    //   alert("you clicked on inner box mini");
+    };
+    document.querySelector(".para").onclick = function(e){
+    //   e.stopPropagation();
+    //   e.stopImmediatePropagation();
+      alert("you clicked on para");
+    };
+
+    // ==========================================================
+    //  event delegation
+    
+  </script>
+</body>
+</html>
