@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <style>
+    *{padding: 0;margin: 0;}
+
+    nav{display: flex;flex-direction: row;justify-content: space-evenly;align-items: center;background-color: #c4c4c4;padding: 10px 5px;}
+
+    .logo{font-size: 28px;font-weight: 600;}
+
+    .menu ul{display: flex;align-items: center;justify-content: space-between;}
+
+    .menu ul li{list-style: none;padding: 0px 10px;font-size: 18px;}
+
+    .buton{padding: 8px 20px;font-size: 16px;}
+
+    .dropdown ul{list-style: none;display: none;}
+
+    .open{position: relative;}
+
+    .open ul{display: flex;flex-direction: column;gap: 10px;padding: 10px;position: absolute;background-color: #c4c4c4;margin-top: 18px;z-index: 1;}
+
+    .open ul li{padding: 0px 25px;}
+
+    .open ul li:hover{border-bottom: 1px solid black;}
+
+    .dropdown .title {font-size: 20px;cursor: pointer;}
+
+    .dropdown .title::after {content: "▶ ";color: black;font-size: 16px;padding-left: 5px;}
+
+    .open .title::after {content: "▼ ";color: black;font-size: 16px;padding-left: 5px;}
+
+    .box{display: flex;flex-direction: column;justify-content: center;align-items: center;padding: 30px;}
+
+    .para{background-color: antiquewhite;border: 1px solid antiquewhite;padding: 20px;margin: 10px;position: relative;}
+
+    .close{color: red;background-color: transparent;padding: 0px 5px;border: 1px solid red;border-radius: 5px;position: absolute;right: 10px;top: 10px;}
+
+    .para h3{font-size: 24px;text-transform: capitalize;font-weight: 600;line-height: 36px;}
+    </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">RVWeb</div>
+    <div class="menu">
+      <ul>
+        <li>Home</li>
+        <li>About us</li>
+        <li class="dropdown">
+          <span class="title">Our Services</span>
+          <ul class="sub">
+            <li>about</li>
+            <li>about1</li>
+            <li>about2</li>
+            <li>about3</li>
+          </ul>
+        </li>
+        <li>Dropdown</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+    <div class="button">
+      <button id="btn" class="buton">Search</button>
+    </div>
+  </nav>
+  <div class="box">
+    <!-- <div class="para"><button class="close"> x </button><h3>heading 1</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div> -->
+    <div class="para"><h3>heading 1</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+    <div class="para"><h3>heading 2</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+    <div class="para"><h3>heading 3</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+    <div class="para"><h3>heading 4</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+  </div>
+  <script>
+    let test = document.querySelector(".dropdown");
+    let title = document.querySelector(".title");
+    title.onclick = function () {
+    test.classList.toggle("open");
+    };
+    let para = document.querySelectorAll(".para");
+    for (const pg of para) {
+      let btn = document.createElement('button');
+      btn.className = "close"
+      btn.innerText = " x ";
+      pg.prepend(btn);
+      pg.firstElementChild.onclick = ()=> pg.remove();
+    }
+  </script>
+</body>
+</html>

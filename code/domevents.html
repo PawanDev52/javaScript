@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DOM Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>
+    <style>
+      .section {
+        padding: 30px;
+      }
+      .design {
+        border: 2px solid green;
+        border-radius: 10px;
+        padding: 20px;
+        width: 40vw;
+        margin-top: 20px;
+        position: relative;
+        height: 400px;
+        margin: auto;
+        background-color: #e3e3e3;
+      }
+      .heading {
+        text-align: center;
+        padding: 100px 20px;
+        border: 4px solid aqua;
+        border-radius: 15px;
+      }
+      .heading h2 {
+        font-size: 30px;
+      }
+      .btn {
+        display: block;
+        margin: auto;
+        background: #7330f9;
+        padding: 5px 30px;
+        font-size: 16px;
+        color: #fff;
+        margin-top: 20px;
+        border: 2px solid #7330f9;
+        position: absolute;
+      }
+      .btn:hover {
+        border: 2px solid #7330f9;
+        color: #7330f9;
+      }
+      .box{
+        margin: 50px;
+        padding: 20px;
+        border: 2px solid black;
+      }
+      .put{
+        display: block;
+        padding: 5px;
+        margin: 15px;
+        background-color: rgb(245, 245, 245);
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section">
+      <div class="container">
+        <div class="design">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="heading"><h2>Kiki, do you code ?</h2></div>
+            </div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-3">
+              <a href="#" class="btn" id="yes">Yes</a>
+            </div>
+            <div class="col-lg-3">
+              <a href="#" class="btn" id="no">No</a>
+            </div>
+            <div class="col-lg-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+<br>
+<div id="txt">this is text</div>
+    <button id="elem">press</button>
+    <input value="Click me" id="click" type="button">
+    <button onclick="countNum()">click</button>
+    <button onclick="alert(this.innerHTML)">click here!</button>
+    <br>
+    <button id="button">touch</button>
+    <!-- <canvas id="can" width="400px" height="200px" style="border: 1px solid black;"></canvas> -->
+     <hr>
+     <div class="box">
+     <button id="add">add</button>
+     <button id="delete">delete</button>
+     <div id="innerbox"></div>
+    </div>
+    <button onclick="this.scrollIntoView(false)" style="margin-bottom: 50px;">click</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+    ></script>
+    <script>
+      // let c = document.getElementById("can");
+// let ctx = c.getContext("2d");
+// ctx.moveTo(0, 0);
+// ctx.lineTo(400, 200);
+// ctx.stroke();
+
+      let yes = document.getElementById("yes");
+      yes.addEventListener("click", () => {
+        document.querySelector("h2").textContent = "Awww, love you too!";
+      });
+      let no = document.getElementById("no");
+      no.addEventListener("mouseover", () => {
+        let design = document.querySelector(".design");
+        let maxX = design.clientWidth - no.offsetWidth;
+        let maxY = design.clientHeight - no.offsetHeight;
+        let x = Math.floor(Math.random() * maxX);
+        let y = Math.floor(Math.random() * maxY);
+        no.style.position = "absolute";
+        no.style.left = x + "px";
+        no.style.top = y + "px";
+      });
+      no.addEventListener("click", () => {
+        document.querySelector("h2").textContent = "why you do that.";
+      });
+
+      // ==============================================================================
+      // function countNum() {
+      //   for (let i = 1; i <=3; i++) {
+      //       alert("Count number is " + i);            
+      //   }
+      // }
+      // let click = document.getElementById("click");
+      // click.onclick = function(){
+      //   alert("you clicked me");
+      // }
+
+// function getThis() {
+//   return this;
+// }
+
+// const obj1 = { name: "obj1" };
+// const obj2 = { name: "obj2" };
+
+// obj1.getThis = getThis;
+// obj2.getThis = getThis;
+
+// console.log(obj1.getThis()); // { name: 'obj1', getThis: [Function: getThis] }
+// console.log(obj2.getThis()); // { name: 'obj2', getThis: [Function: getThis] }
+
+// function sayThanks() {
+//   alert('Thanks!');
+// }
+
+// elem.onclick = function(){
+//   sayThanks();
+// }
+
+// elem.onclick = function(){
+//  alert('this is alert');
+// }
+
+// elem.addEventListener("click", ()=>{
+//   alert('showing alert')
+// });
+// elem.addEventListener("click", sayThanks);
+
+// elem.removeEventListener("click", sayThanks);
+
+// elem.onclick = function() { alert(12); }
+// elem.onclick = function() { alert(21); }
+
+// elem.addEventListener("click", ()=>{
+//   alert('alert');
+// });
+// elem.addEventListener("click", ()=>{
+//   alert('alert2');
+// });
+// elem.addEventListener("click", ()=>{
+//   alert('show');
+// });
+
+// document.addEventListener("DOMContentLoaded", ()=>{
+//   alert('document loaded');
+// });
+
+// elem.onclick = function(event) {
+//     // show event type, element and coordinates of the click
+//     alert(event.type + " at " + event.currentTarget);
+//     alert("Coordinates: " + event.clientX + ":" + event.clientY);
+//   };
+
+// elem.addEventListener("click", (event)=>{
+//   alert(event.type + " at " + event.currentTarget);
+//   alert("coordinates : " + event.clientX + " : " + event.clientY);
+// });
+
+// elem.addEventListener("click", function(event){
+//   alert(event.type + " at " + this);
+//   alert("coordinates : " + event.clientX + " : " + event.clientY);
+// });
+
+// let obt = {
+//   handleEvent(event){
+//     alert(event.type + " at " + event.currentTarget);
+//   }
+// };
+// let obt = {
+//   handleEvent(){
+//     alert('this is a alert!')
+//   }
+// };
+// elem.addEventListener("click", obt);
+
+// ===============================================================
+/*
+let elem = document.getElementById("elem");
+class Menu {
+  handleEvent(event){
+    switch (event.type) {
+      // case 'mouseover':
+      //   elem.innerHTML = "you hover button";
+      //   break;
+      case 'mousedown':
+        elem.innerHTML = " then clicked";
+        break;
+      case 'mouseup':
+        elem.innerHTML += " then released";
+        break;
+    }
+  }
+}
+let menu = new Menu();
+elem.addEventListener("mousedown", menu);
+elem.addEventListener("mouseup", menu);
+elem.addEventListener("mouseover", menu);
+*/
+// =============================================
+/*class Menu {
+  handleEvent(event){
+    let method = "on" + event.type[0].toUpperCase() + event.type.slice(1);
+    this[method](event);
+  }
+  onMousedown(){
+    elem.innerHTML = "clicked";
+  }
+  onMouseup(){
+    elem.innerHTML = "released";
+  }
+  onMouseover(){
+    elem.innerHTML = "hovered";
+  }
+}
+let elem = document.getElementById("elem");
+let menu = new Menu();
+elem.addEventListener("mousedown", menu);
+elem.addEventListener("mouseup", menu);
+elem.addEventListener("mouseover", menu);
+*/
+
+// let elem = document.getElementById("elem");
+// elem.addEventListener("click", ()=>{
+//   elem.style.display = "none";
+//   // document.getElementById("txt").style.display = "none";
+// });
+// elem.addEventListener("contextmenu", ()=>{
+//   document.getElementById("txt").innerHTML = "this is new text";
+// })
+
+// let button = document.getElementById("button");
+// button.addEventListener("click", () => console.log("1"));
+// button.removeEventListener("click", () => console.log("1"));
+// button.onclick = () => console.log(2);
+
+let add = document.getElementById("add");
+let dlt = document.getElementById("delete");
+let innerbox = document.getElementById("innerbox");
+
+add.addEventListener("click", ()=>{
+  let inpt = document.createElement("input");
+  inpt.className = "put";
+  inpt.value = "text";
+  innerbox.append(inpt);
+});
+
+dlt.addEventListener("click", ()=>{
+  innerbox.lastElementChild.remove();
+});
+
+// document.body.onclick = ()=>{
+//   window.scrollBy(0,50);
+//   window.scrollTo(0,0);
+//   console.log(window.scrollY);
+// }
+
+// document.querySelector(".design").addEventListener("click", function(){
+//   // this.scrollIntoView();
+//   // this.scrollIntoView(false);
+// });
+
+// document.querySelector(".design").addEventListener("click", function(el){
+//   el.target.scrollIntoView();
+// });
+
+// document.body.onclick = function(el){
+//   console.log(this.getBoundingClientRect());
+//   console.log(el.clientX, el.clientY);
+//   // this.getBoundingClientRect();
+// }
+    </script>
+  </body>
+</html>
