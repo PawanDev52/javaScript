@@ -52,19 +52,19 @@ console.log("learning strings in js");
 console.log(`har\'`.length);
 
 // question 2
-let a = "dEvelOpEr";
-console.log(a.includes("loe"));
-console.log(a.startsWith("d"));
-console.log(a.endsWith("er"));
+// let a = "dEvelOpEr";
+// console.log(a.includes("loe"));
+// console.log(a.startsWith("d"));
+// console.log(a.endsWith("er"));
 
 // question 3
-console.log(a.toLowerCase());
-console.log(a.toUpperCase());
+// console.log(a.toLowerCase());
+// console.log(a.toUpperCase());
 
 // question 4
-let b = "Please give Rs 1000";
-console.log(b.slice(12));
-console.log(b.slice(15));
+// let b = "Please give Rs 1000";
+// console.log(b.slice(12));
+// console.log(b.slice(15));
 
 // question 5
-console.log(b.replace("a", "A"));
+// console.log(b.replace("a", "A"));
