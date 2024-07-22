@@ -25,7 +25,6 @@ let prom = new Promise((resolve, reject) => {
     }, 3000);
   }
 });
-
 prom.then((a) => {
   console.log(a);
 }).catch((err)=>{
