@@ -9,7 +9,13 @@
   <h2>Async & Await</h2>
   <button id="start">start</button>
   <button id="stop">stop</button>
+
+  <h3>Change background color</h3>
+  <button id="change">change</button>
+  <button id="pause">pause</button>
   <script>
+    /*
+    // for start and stop
     let showD = function(str){
       console.log(str, Date.now());
     }
@@ -22,6 +28,31 @@
     document.querySelector("#stop").onclick = ()=>{
       clearInterval(intrvl)
     }
+    */
+
+    // generate random color
+    let randomColor = function(){
+      let hex = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += hex[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    };
+    let set;
+    const changeColor = function(){
+      let clr = function(){
+        document.body.style.background = randomColor()
+      }  
+      set = setInterval(clr, 1000);
+    }
+    const stopColor = function(){
+      clearInterval(set);
+      // set = null;
+    }
+
+    document.querySelector("#change").addEventListener("click", changeColor);
+    document.querySelector("#pause").addEventListener("click", stopColor);
   </script>
 </body>
 </html>
