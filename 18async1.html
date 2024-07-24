@@ -7,9 +7,21 @@
 </head>
 <body>
   <h2>Async & Await</h2>
+  <button id="start">start</button>
   <button id="stop">stop</button>
   <script>
-    
+    let showD = function(str){
+      console.log(str, Date.now());
+    }
+    let intrvl;
+    document.querySelector("#start").addEventListener("click", ()=>{
+      intrvl = setInterval(showD, 1000, "hello")
+
+    })
+
+    document.querySelector("#stop").onclick = ()=>{
+      clearInterval(intrvl)
+    }
   </script>
 </body>
 </html>
