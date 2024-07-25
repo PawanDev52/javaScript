@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Async/Await</title>
+  <style>
+    button{
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <h2>Async & Await</h2>
@@ -40,15 +45,14 @@
       return color;
     };
     let set;
-    const changeColor = function(){
-      let clr = function(){
+    let changeColor = function(){
+      let color = function(){
         document.body.style.background = randomColor()
-      }  
-      set = setInterval(clr, 1000);
+      }
+      set = setInterval(color, 1000)
     }
-    const stopColor = function(){
-      clearInterval(set);
-      // set = null;
+    let stopColor = function(){
+      clearInterval(set)
     }
 
     document.querySelector("#change").addEventListener("click", changeColor);
