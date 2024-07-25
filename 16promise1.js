@@ -100,7 +100,8 @@ getAllUsers();
 */ // commenting this example because we are doing the same task in the below example also
 
 // example - 7
-fetch("https://jsonplaceholder.typicode.com/users")
+// fetch("https://jsonplaceholder.typicode.com/users")
+fetch("https://api.github.com/users/hiteshchoudhary")
   .then((response) => {
     return response.json();
   })
