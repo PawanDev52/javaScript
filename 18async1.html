@@ -18,6 +18,12 @@
   <h3>Change background color</h3>
   <button id="change">change</button>
   <button id="pause">pause</button>
+
+  <div class="project">
+    <div id="insert">
+      <div class="key">Press the key and see magic</div>
+    </div>
+  </div>
   <script>
     /*
     // for start and stop
@@ -36,6 +42,7 @@
     */
 
     // generate random color
+    /*
     let randomColor = function(){
       let hex = '0123456789ABCDEF';
       let color = '#';
@@ -44,19 +51,45 @@
       }
       return color;
     };
+
     let set;
     let changeColor = function(){
       let color = function(){
         document.body.style.background = randomColor()
       }
-      set = setInterval(color, 1000)
+      if (!set) {
+        set = setInterval(color, 1000)
+      }
     }
+
     let stopColor = function(){
       clearInterval(set)
+      set = null;
     }
 
     document.querySelector("#change").addEventListener("click", changeColor);
     document.querySelector("#pause").addEventListener("click", stopColor);
+    */
+  // project - 2
+  let insert = document.querySelector("#insert");
+  window.addEventListener("keydown", (e)=>{
+    insert.innerHTML = `
+    <div class="color">
+      <table>
+    <tr>
+      <th>Key</th>
+      <th>KeyCode</th>
+      <th>Code</th>
+    </tr>
+    <tr>
+      <td>${e.key === " " ? 'space' : e.key}</td>
+      <td>${e.keyCode}</td>
+      <td>${e.code}</td>
+    </tr>
+  </table>
+    </div>
+    `
+  });
   </script>
 </body>
 </html>
