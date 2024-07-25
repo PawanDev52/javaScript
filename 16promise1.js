@@ -86,15 +86,25 @@ async function consumePromiseFive() {
 consumePromiseFive();
 
 // example - 6
+/*
 async function getAllUsers() {
   try {
     const response = await fetch("https://jsonplaceholder.typicode.com/users");
-    // console.log(response)
-    const data = response.json();
+    const data = await response.json();
     console.log(data);
   } catch (error) {
     console.log("Error: ", error);
   }
 }
-
 getAllUsers();
+*/ // commenting this example because we are doing the same task in the below example also
+
+// example - 7
+fetch("https://jsonplaceholder.typicode.com/users")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => console.log(error));
