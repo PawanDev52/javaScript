@@ -13,7 +13,18 @@
         throw SyntaxError("Sorry this is not allowed"); // for throwing error
       }
       let sum = a + b;
-      console.log("the sum is ", sum);
+      function main() {
+        let x = 1;
+        try {
+          console.log("the sum is ", sum * x);
+          return true;
+        } catch (error) {
+          console.log("error aa rha hai");
+          return false;
+        } finally {
+          console.log("files are closed and db connection is closed");
+        }
+      }
     </script>
   </body>
 </html>
