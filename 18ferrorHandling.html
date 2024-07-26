@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error Handling</title>
+  </head>
+  <body>
+    <script>
+      let a = parseInt(prompt("enter value of a"));
+      let b = parseInt(prompt("enter value of b"));
+      if (isNaN(a) || isNaN(b)) {
+        throw SyntaxError("Sorry this is not allowed"); // for throwing error
+      }
+      let sum = a + b;
+      console.log("the sum is ", sum);
+    </script>
+  </body>
+</html>
