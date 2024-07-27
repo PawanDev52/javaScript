@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookies</title>
+  </head>
+  <body>
+    <script>
+// cookies
+    //   console.log(document.cookie);
+    //   document.cookie = "adding cookie";
+    //   document.cookie = "name=coder1234";
+    //   document.cookie = "name=cd12";
+    //   let key = prompt("enter your key");
+    //   let value = prompt("enter your value");
+    
+    //   document.cookie = `${key} = ${value}`
+    //   document.cookie = `${encodeURIComponent(key)}= ${encodeURIComponent(value)}`; //encode the special characters
+    //   console.log(decodeURIComponent("qw%40w=12")); // decode the special characters
+    //   console.log(document.cookie);
+
+    // ==============================================================================================
+
+    // Local Storage
+
+    let key = prompt("enter your key");
+    let value = prompt("enter your value");
+
+    localStorage.setItem(key, value) // for setting item
+    console.log(`the value at ${key} is ${localStorage.getItem(key)}`); // for getting item
+
+    if (key == "red" || key == "blue") {
+        localStorage.removeItem(key)
+    }
+
+    if (key == 0) {
+        localStorage.clear()
+    }
+
+    console.log(localStorage.length)
+    console.log(localStorage.key(1))
+
+    // same as localstorage there is a session storage also - check notes
+    
+    </script>
+  </body>
+</html>
