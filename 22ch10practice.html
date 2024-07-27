@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter - 10 Practice</title>
 </head>
 <body>
-    
+  <script>
+    // question - 2, 3, 4
+    let n = localStorage.getItem("note")
+    alert("Your note is " + n);
+
+    let a = prompt("enter a value");
+    if(a){
+      localStorage.setItem("note", a);
+    }
+
+    let c = confirm("Do you want to delete your note ?")
+    if (c) {
+      localStorage.removeItem("note")
+      alert("note deleted successfully")
+    }
+  </script>
 </body>
 </html>
