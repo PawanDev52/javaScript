@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prototypes</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        // prototypes
-        /*
+      // prototypes
+      /*
         let a = {
             name: "developer",
             language: "JS",
@@ -34,10 +34,35 @@
         console.log(a.name2)
         */
 
-        // =========================================================================================
-        // classes & objects
+      // =========================================================================================
+      // classes & objects
 
-        
+      class railwayForm{
+        submit(){
+            alert(this.name + ": form is submitted for train no. " + this.trainno)
+        }
+        cancel(){
+            alert(this.name + ": form is cancelled for train no. " + this.trainno)
+        }
+        fill(givenname, trainno){
+            this.name = givenname
+            this.trainno = trainno
+        }
+      }
+
+      let sam = new railwayForm()
+      sam.fill("sam", 135687)
+      let rohan1 = new railwayForm()
+      let rohan2 = new railwayForm()
+      rohan1.fill("rohan", 420420)
+      rohan2.fill("rohan", 42277)
+
+      sam.submit()
+      rohan1.submit()
+      rohan2.submit()
+      rohan1.cancel()
+
+    //   if any dought check video #76 of cwh old playlist
     </script>
-</body>
+  </body>
 </html>
