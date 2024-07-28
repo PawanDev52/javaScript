@@ -7,6 +7,7 @@
 </head>
 <body>
 <script>
+    /*
   class animal{
     constructor(name, color){
       this.name = name
@@ -35,6 +36,38 @@
   ani.shout()
   m.eatBanana()
   m.run()
+*/
+
+//   ========================================================================================
+// method over riding
+class employee{
+  login(){
+    console.log("employee has logged in")
+  }
+  logout(){
+    console.log("employee has logged out")
+  }
+  rqtleave(leave){
+    console.log(`employee has requested ${leave} leaves`)
+  }
+}
+
+class programmer extends employee{
+  rqtcoffee(x){
+    console.log(`employee has requested ${x} coffee`)
+  }
+//   rqtleave(leave){ // over ride the parent class method - this is mehtod overriding
+//     console.log(`employee has requested ${leave+1} leaves (one extra for free)`)
+//   }
+  rqtleave(leave){
+    super.rqtleave(4)
+    console.log("one extra is free")
+  }
+}
+
+let e = new programmer()
+e.login()
+e.rqtleave(3)
 </script>
 </body>
 </html>
