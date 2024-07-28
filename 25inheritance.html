@@ -39,8 +39,12 @@
 */
 
 //   ========================================================================================
-// method over riding
+// method over riding & constructor over riding
 class employee{
+  constructor(name){
+    this.name = name
+    console.log(this.name + " employee's constructor is here")
+  }
   login(){
     console.log("employee has logged in")
   }
@@ -52,7 +56,11 @@ class employee{
   }
 }
 
-class programmer extends employee{
+class programmer extends employee{ // if there is no constructor in child class it will created automatically
+  constructor(name){
+    super(name)
+    console.log("programmer constructor")
+  }
   rqtcoffee(x){
     console.log(`employee has requested ${x} coffee`)
   }
@@ -65,7 +73,7 @@ class programmer extends employee{
   }
 }
 
-let e = new programmer()
+let e = new programmer("coder")
 e.login()
 e.rqtleave(3)
 </script>
