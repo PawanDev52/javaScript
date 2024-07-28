@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /*
+    class railwayForm {
+      constructor(givenname, trainno){
+        console.log("constructor called... " + givenname + " " + trainno)
+        this.name = givenname;
+        this.trainno = trainno;
+      }
+      submit() {
+        alert(this.name + ": form is submitted for train no. " + this.trainno);
+      }
+      cancel() {
+        alert(this.name + ": form is cancelled for train no. " + this.trainno);
+      }
+    }
+
+    let sam = new railwayForm("sam", 135687); // whenever a new object is created constructor will be called
+    let rohan1 = new railwayForm("rohan", 420420);
+    let rohan2 = new railwayForm("rohan", 42277);
+      
+    sam.submit();
+    rohan1.submit();
+    rohan2.submit();
+    rohan1.cancel();
+    */
+
+    // ////////////////////////////////////////////////////////////////////////////////////////////////////
+    // another example
+
+    class railwayForm {
+      constructor(givenname, trainno, address){
+        console.log("constructor called... " + givenname + " " + trainno)
+        this.name = givenname;
+        this.trainno = trainno;
+        this.address = address
+      }
+      preview() {
+        alert(this.name + ": form for train no. " + this.trainno + " and your address is " + this.address);
+      }
+      submit() {
+        alert(this.name + ": form is submitted for train no. " + this.trainno);
+      }
+      cancel() {
+        alert(this.name + ": form is cancelled for train no. " + this.trainno);
+        this.trainno = 0
+      }
+    }
+
+    let myForm = new railwayForm("shivam", 420151, "new delhi")
+    myForm.preview()
+    myForm.submit()
+    myForm.cancel()
+    myForm.preview()
+    
+  </script>
+</body>
+</html>
