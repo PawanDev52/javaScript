@@ -7,7 +7,21 @@
 </head>
 <body>
   <script>
-    
+    // static methods - can access with class name not individualy
+    class animal{
+      constructor(name){
+        this.name = animal.capitalise(name)
+      }
+      walk(){
+        console.log(`animal ${this.name} is walking!`)
+      }
+      static capitalise(name){
+        return name.charAt(0).toUpperCase() + name.substr(1, name.length)
+      }
+    }
+
+    let j = new animal("joker")
+    j.walk()
   </script>
 </body>
 </html>
