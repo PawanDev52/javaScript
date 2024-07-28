@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<body>
+<script>
+  class animal{
+    constructor(name, color){
+      this.name = name
+      this.color = color
+    }
+    run(){
+      console.log(this.name + " is running!")
+    }
+    shout(){
+      console.log(this.name + " is shouting!")
+    }
+  }
+//   extend keyword ka use karke hum dusre class ke methods bhi use kar sakte hai
+  class monkey extends animal{
+    eatBanana(){
+      console.log(this.name + " is eating banana")
+    }
+    hide(){
+      console.log(`${this.name} is hiding`)
+    }
+  }
+
+  let ani = new animal("bruto", "black")
+  let m = new monkey("champak", "brown")
+
+  ani.shout()
+  m.eatBanana()
+  m.run()
+</script>
+</body>
+</html>
