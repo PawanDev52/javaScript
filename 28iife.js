@@ -48,17 +48,17 @@ let arr = [3, 5, 6, 8, 76, 12]
 
 // example - 2
 let {a, b} = {a:1, b:2}
-console.log(a, b)
+// console.log(a, b)
 
 // spread operator
 let arr1 = [3, 5, 8]
 let obj1 = {...arr1}
-console.log(obj1)
+// console.log(obj1)
 
 function sum(v1, v2, v3){
     return v1 + v2 + v3
 }
-console.log(sum(...arr1))
+// console.log(sum(...arr1))
 
 // example - 3
 let obj2 = {
@@ -68,4 +68,19 @@ let obj2 = {
 }
 
 // console.log({...obj2, name: "devid", company: "abc"}) // values will change
-console.log({name: "devid", company: "abc", ...obj2}) // will not change
+// console.log({name: "devid", company: "abc", ...obj2}) // will not change
+
+// Hoisting
+/*
+console.log(z) // will print undefined with var
+greet()
+function greet(){
+  console.log("good morning");
+}
+// const z = 9;
+// let z = 9;
+// var z = 9; // declaration hoisted to the top but initialization is not
+console.log(z)
+*/
+
+// Closures
