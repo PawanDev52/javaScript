@@ -139,5 +139,17 @@ console.log(z)
 
 // ===================================================================================
 // Arrow function ()=>{}
+const sayhello = (name, greeting) => console.log(greeting + " hello " + name)
+sayhello("venny", "mr")
 
-
+const x = {
+  name: "devid",
+  role: "developer",
+  exp: 30,
+  show: function(){
+    setTimeout(()=>{
+      console.log(`the name is ${this.name}\n the role is ${this.role}`)
+    }, 2000)
+  }
+}
+x.show()
