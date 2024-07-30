@@ -33,7 +33,7 @@ let a = () => {
 // =========================================================================
 // Destructuring
 
-let arr = [3, 5, 6, 8, 76, 12]
+// let arr = [3, 5, 6, 8, 76, 12];
 // normal method
 // let a = arr[0]
 // let b = arr[1]
@@ -47,29 +47,30 @@ let arr = [3, 5, 6, 8, 76, 12]
 // console.log(a, rest)
 
 // example - 2
-let {a, b} = {a:1, b:2}
+// let { a, b } = { a: 1, b: 2 };
 // console.log(a, b)
 
 // spread operator
-let arr1 = [3, 5, 8]
-let obj1 = {...arr1}
+// let arr1 = [3, 5, 8];
+// let obj1 = { ...arr1 };
 // console.log(obj1)
 
-function sum(v1, v2, v3){
-    return v1 + v2 + v3
-}
+// function sum(v1, v2, v3) {
+//   return v1 + v2 + v3;
+// }
 // console.log(sum(...arr1))
 
 // example - 3
-let obj2 = {
-    name: "joe",
-    company: "toyo",
-    address: "xyz"
-}
+// let obj2 = {
+//   name: "joe",
+//   company: "toyo",
+//   address: "xyz",
+// };
 
 // console.log({...obj2, name: "devid", company: "abc"}) // values will change
 // console.log({name: "devid", company: "abc", ...obj2}) // will not change
 
+// =======================================================================================
 // Hoisting
 /*
 console.log(z) // will print undefined with var
@@ -83,4 +84,55 @@ function greet(){
 console.log(z)
 */
 
+// ===============================================================================================
 // Closures
+
+// message = "good global"
+// function hellow(){
+//   let message = "good morning"
+//   {
+//     let message = "good afternoon"
+//     console.log(message)
+//   }
+//   let c = function hellow2(){
+//     console.log("i am c " + message)
+//   }
+//   return c
+// }
+// c = hellow()
+// c()
+
+// example - 1
+
+// function init(){
+//   var name = "mozilla"
+//   function disply(){
+//     console.log(name)
+//   }
+//   name = "peter"
+//   return disply;
+// }
+// let t = init();
+// t()
+
+// example - 2
+function retrnfun() {
+  const x = () => {
+    let a = 1;
+    console.log(a);
+    const y = () => {
+      // let a = 2;
+      console.log(a);
+      const z = () => {
+        // let a = 3;
+        console.log(a);
+      };
+      z();
+    };
+    a = 99;
+    y();
+  };
+  return x;
+}
+let f = retrnfun();
+f();
