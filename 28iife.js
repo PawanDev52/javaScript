@@ -116,23 +116,28 @@ console.log(z)
 // t()
 
 // example - 2
-function retrnfun() {
-  const x = () => {
-    let a = 1;
-    console.log(a);
-    const y = () => {
-      // let a = 2;
-      console.log(a);
-      const z = () => {
-        // let a = 3;
-        console.log(a);
-      };
-      z();
-    };
-    a = 99;
-    y();
-  };
-  return x;
-}
-let f = retrnfun();
-f();
+// function retrnfun() {
+//   const x = () => {
+//     let a = 1;
+//     console.log(a);
+//     const y = () => {
+//       // let a = 2;
+//       console.log(a);
+//       const z = () => {
+//         // let a = 3;
+//         console.log(a);
+//       };
+//       z();
+//     };
+//     a = 99;
+//     y();
+//   };
+//   return x;
+// }
+// let f = retrnfun();
+// f();
+
+// ===================================================================================
+// Arrow function ()=>{}
+
+
