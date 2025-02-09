@@ -85,7 +85,8 @@
       btn.className = "close"
       btn.innerText = " x ";
       pg.prepend(btn);
-      pg.firstElementChild.onclick = ()=> pg.remove();
+      // pg.firstElementChild.onclick = ()=> pg.remove();
+      btn.onclick = ()=> pg.remove();
     }
   </script>
 </body>

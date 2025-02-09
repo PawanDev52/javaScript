@@ -1,82 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practice</title>
     <style>
-        table{
-            border: 1px solid #000;
-        }
-        table td{
-            border: 1px solid #000;
-            background: #fff;
-            color: #000;
-            padding: 5px;
-        }
+      table {
+        border: 1px solid #000;
+      }
+      table td {
+        border: 1px solid #000;
+        background: #fff;
+        color: #000;
+        padding: 5px;
+      }
+      #field {
+        border: 4px solid black;
+        background-color: #46a546;
+        width: 400px;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      #ball {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 40px;
+        width: 40px;
+        /* transition: all 1s; */
+        transition: left 0.5s linear, top 0.5s linear; /* using it with mouse move */
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .box {
+        background: pink;
+        width: 50%;
+        padding: 15px;
+        margin: 10px;
+      }
+      .btn {
+        float: right;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <table id="tb">
-        <tr>
-            <td>1.1</td>
-            <td>2.1</td>
-            <td>3.1</td>
-            <td>4.1</td>
-            <td>5.1</td>
-        </tr>
-        <tr>
-            <td>1.2</td>
-            <td>2.2</td>
-            <td>3.2</td>
-            <td>4.2</td>
-            <td>5.2</td>
-        </tr>
-        <tr>
-            <td>1.3</td>
-            <td>2.3</td>
-            <td>3.3</td>
-            <td>4.3</td>
-            <td>5.3</td>
-        </tr>
-        <tr>
-            <td>1.4</td>
-            <td>2.4</td>
-            <td>3.4</td>
-            <td>4.4</td>
-            <td>5.4</td>
-        </tr>
-        <tr>
-            <td>1.5</td>
-            <td>2.5</td>
-            <td>3.5</td>
-            <td>4.5</td>
-            <td>5.5</td>
-        </tr>
+      <tr>
+        <td>1.1</td>
+        <td>2.1</td>
+        <td>3.1</td>
+        <td>4.1</td>
+        <td>5.1</td>
+      </tr>
+      <tr>
+        <td>1.2</td>
+        <td>2.2</td>
+        <td>3.2</td>
+        <td>4.2</td>
+        <td>5.2</td>
+      </tr>
+      <tr>
+        <td>1.3</td>
+        <td>2.3</td>
+        <td>3.3</td>
+        <td>4.3</td>
+        <td>5.3</td>
+      </tr>
+      <tr>
+        <td>1.4</td>
+        <td>2.4</td>
+        <td>3.4</td>
+        <td>4.4</td>
+        <td>5.4</td>
+      </tr>
+      <tr>
+        <td>1.5</td>
+        <td>2.5</td>
+        <td>3.5</td>
+        <td>4.5</td>
+        <td>5.5</td>
+      </tr>
     </table>
+    <hr />
+    <p class="text">hide this</p>
+    <button class="press">Click</button>
+    <hr />
+    <button class="hideme">Hide me</button>
+    <hr />
+    <div id="field">
+      <img id="ball" src="assets/images/ball.svg" alt="football" />
+      ---------------------------------------------------------------------------
+      ---------------------------------------------------------------------------
+      ---------------------------------------------------------------------------
+      ---------------------------------------------------------------------------
+      ---------------------------------------------------------------------------
+      ---------------------------------------------------------------------------
+      ---------------------------------------------------------------------------
+      ---------------------------------------------------------------------------
+      ---------------------------------------------------------------------------
+      ---------------------------------------------------------------------------
+      ---------------------------------------------------------------------------
+      ---------------------------------------------------------------------------
+      ---------------------------------------------------------------------------
+      ---------------------------------------------------------------------------
+      ---------------------------------------------------------------------------
+      ---------------------------------------------------------------------------
+    </div>
+    <div id="text"></div>
+    <hr />
+    <div class="container">
+      <div class="box">
+        <h2>Heading here</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus,
+          perferendis.
+        </p>
+      </div>
+      <div class="box">
+        <h2>Heading here</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus,
+          perferendis.
+        </p>
+      </div>
+      <div class="box">
+        <h2>Heading here</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus,
+          perferendis.
+        </p>
+      </div>
+    </div>
+    <hr />
+
     <script>
-        let table = document.body.firstElementChild;
-        for (let i = 0; i < table.rows.length; i++) {
-            table.rows[i].cells[i].style.background = "red"; 
-        }
+      /*
+      let table = document.body.firstElementChild;
+      for (let i = 0; i < table.rows.length; i++) {
+        table.rows[i].cells[i].style.background = "red";
+      }
 
-        // let tb = document.getElementById("tb");
-        // tb.style.background = "pink";
+      // let tb = document.getElementById("tb");
+      // tb.style.background = "pink";
 
-        tb.style.background = "green"; // accessing directly with id
+      tb.style.background = "green"; // accessing directly with id
 
-        // closest
-        let clos = document.body.firstElementChild.children[0].lastElementChild.children[2];
-        console.log(clos);
-        console.log(clos.closest('table'));
-        let tr = document.querySelectorAll('tr');
-        console.log(tr);
-         let te = table.rows[0].cells[4];
-         console.log(te);
+      // closest
+      let clos =
+        document.body.firstElementChild.children[0].lastElementChild
+          .children[2];
+      console.log(clos);
+      console.log(clos.closest("table"));
+      let tr = document.querySelectorAll("tr");
+      console.log(tr);
+      let te = table.rows[0].cells[4];
+      console.log(te);
 
-         let bd = document.body;
-        //  console.log(bd);
-        // console.dir(bd);
+      let bd = document.body;
+      //  console.log(bd);
+      // console.dir(bd);
+
+      // task 1
+      let text = document.querySelector(".text");
+      let press = document.querySelector(".press");
+      press.onclick = () => {
+        text.style.display = "none";
+      };
+
+      // task 2
+      let hideme = document.querySelector(".hideme");
+      // hideme.onclick = ()=> hideme.style.display = "none";
+
+      // task 3
+      hideme.addEventListener("click", () => alert("1"));
+      hideme.removeEventListener("click", () => alert("1"));
+      hideme.onclick = () => alert("2");
+      */
+
+      //   task 4
+      let field = document.getElementById("field");
+      let ball = document.getElementById("ball");
+      let text = document.getElementById("text");
+
+      // ball.style.top = (field.clientHeight - ball.offsetHeight) / 2 + "px";
+      // ball.style.left = (field.clientWidth - ball.offsetWidth) / 2 + "px";
+
+      field.addEventListener("mousemove", (e) => {
+        // can use click event also
+        text.innerHTML = `${e.clientX} , ${e.clientY}`;
+        let cord = field.getBoundingClientRect();
+        let left =
+          e.clientX - cord.left - field.clientLeft - ball.offsetWidth / 2;
+        let top =
+          e.clientY - cord.top - field.clientTop - ball.offsetHeight / 2;
+
+        if (left < 0) left = 0;
+        if (top < 0) top = 0;
+        if (left + ball.clientWidth > field.clientWidth)
+          left = field.clientWidth - ball.offsetWidth;
+        if (top + ball.clientHeight > field.clientHeight)
+          top = field.clientHeight - ball.offsetHeight;
+
+        ball.style.left = left + "px";
+        ball.style.top = top + "px";
+      });
+
+      // task 5
+      let box = document.querySelectorAll(".box");
+      for (const close of box) {
+        let button = document.createElement("button");
+        button.innerHTML = "X";
+        button.classList = "btn";
+        close.prepend(button);
+        button.onclick = () => close.remove();
+      }
+
+      // task 6
     </script>
-</body>
+  </body>
 </html>
