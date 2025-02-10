@@ -90,7 +90,35 @@
     </div>
 
     <script>
-        
+      let i = 1;
+      for (const li of document.querySelectorAll("li")) {
+        li.style.position = "relative";
+        li.insertAdjacentHTML(
+          "beforeend",
+          `<span style='position:absolute; top:0; left:0;'>${i}</span>`
+        );
+        i++;
+      }
+
+      let width = 130;
+      let count = 1;
+      let list = document.querySelector("ul");
+      let listElem = document.querySelectorAll("li");
+      let position = 0;
+      let prev = document.querySelector(".prev");
+      let next = document.querySelector(".next");
+
+      prev.onclick = () => {
+        position += width * count;
+        position = Math.min(position, 0);
+        list.style.marginLeft = position + "px";
+      };
+
+      next.onclick = () => {
+        position -= width * count;
+        position = Math.max(position, -width * (listElem.length - 3));
+        list.style.marginLeft = position + "px";
+      };
     </script>
   </body>
 </html>
